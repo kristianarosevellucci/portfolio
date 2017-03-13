@@ -1,0 +1,125 @@
+/*---------- About Section ----------*/
+.about__text {
+  background: repeating-linear-gradient(135deg, white, #e8e8e8 1px, white 2px, white 10px);
+  margin: 35px 0;
+  .title {
+    font-weight: 900;
+    font-size: 48px;
+    color: #555;
+    line-height: 1;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+}
+
+.about__portrait {
+  width: 275px;
+  display: block;
+  margin: 0 auto;
+}
+
+.about__text--title {
+  margin-left: 25px;
+}
+
+.blog {
+  min-height: 550px;
+}
+
+/*---------- Featured Work ----------*/
+
+.featured-work__title {
+  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  color: white;
+  font-size: 65px;
+  text-align: center;
+  @media only screen and (max-width : 1199px) {
+    font-size: 55px
+  }
+  @media only screen and (max-width : 767px) {
+    font-size: 40px;
+    top: 25%;
+  }
+  @media only screen and (max-width : 480px) {
+    font-size: 28px;
+    top: 25%;
+    left: 30px;
+    text-align: left;
+  }
+}
+
+.featured-work__title--identity {
+  left: 27%;
+}
+
+.featured-work__title--art {
+  left: 30%;
+}
+
+.featured-work__lead {
+  font-size: 18px;
+  font-weight: 500;
+  small {
+    font-size: 12px;
+  }
+}
+
+.featured-work__button {
+  font-weight: 800;
+  font-family: 'Open Sans';
+  color: $pink;
+  transition: 0.3s;
+  &:hover {
+    color: $orange;
+    text-decoration: none;
+  }
+}
+
+.featured-work__slider--count {
+  text-align: right;
+  position: absolute;
+  color: white;
+  right: 85px;
+  top: 10px;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.featured-work__slider--title {
+  position: absolute;
+  color: white;
+  bottom: 10px;
+  left: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 16px;
+  @media only screen and (max-width : 767px) {
+    font-size: 12px;
+  }
+}
+
+.recent-work__item {
+  width: 94%;
+}
+
+/*---------- Resume Section ----------*/
+.resume {
+  background: black url('../images/resume-bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.resume__title {
+  font-size: 40px;
+  color: white;
+}

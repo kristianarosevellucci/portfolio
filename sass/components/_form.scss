@@ -1,0 +1,19 @@
+.contact__input {
+  width: 100%;
+  outline: none;
+  margin: 5px 0;
+  padding: 10px;
+  border: solid 1px #ccc;
+  color: #5d5d5d;
+  font-weight: 300;
+  font-family: 'Source Sans Pro',sans-serif;
+}
+
+.contact__input--message {
+  height: 150px;
+  resize: none;
+  border: solid 1px #ccc;
+  color: #5d5d5d;
+  font-weight: 300;
+  font-family: 'Source Sans Pro',sans-serif;
+}

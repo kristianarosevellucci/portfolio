@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+//Base Styles
+@import
+'base/variables',
+'base/mixins',
+'base/helpers',
+'base/overwrites',
+'base/global';
+
+//Component Styles
+@import
+'components/blogposts',
+'components/carousel',
+'components/contact',
+'components/clients',
+'components/form',
+'components/footer',
+'components/header',
+'components/navigation',
+'components/services';
+
+//Page Specific Styles
+@import
+'pages/home',
+'pages/portfolio';

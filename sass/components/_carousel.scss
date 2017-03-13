@@ -1,0 +1,167 @@
+.carousel {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-control.right {
+    right: 30.6%;
+}
+
+.carousel-control.left {
+  left: 1%;
+}
+
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  background-color: #fefe47;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-indicators {
+  @media only screen and (max-width : 767px) {
+    bottom: 75px;
+    width: 20px;
+    left: 0;
+    padding-left: 0;
+    margin-left: 0;
+    right: 50%;
+  }
+}
+
+.carousel-fade {
+  .carousel-inner {
+    .item {
+      transition-property: opacity;
+    }
+    .item,
+    .active.left,
+    .active.right {
+      opacity: 0;
+    }
+    .active,
+    .next.left,
+    .prev.right {
+      opacity: 1;
+    }
+    .next,
+    .prev,
+    .active.left,
+    .active.right {
+      left: 0;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .carousel-control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 7%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-shadow: none;
+    background-color: rgba(0,0,0,0);
+    background: #555555 !important;
+    filter: alpha(opacity=50);
+    opacity: .5;
+    height: 45px !important;
+    margin-top: 250px;
+    background-image: none;
+    padding-top: 5px;
+    font-weight: 100;
+    .glyphicon-chevron-left, .glyphicon-chevron-right, .icon-next, .icon-prev {
+      width: 20px;
+      height: 20px;
+      margin-top: -15px;
+      font-size: 20px;
+    }
+  }
+}
+
+.carousel-buttons {
+  height: 200px;
+  margin-top: 10%;
+}
+
+.carousel-indicators__square {
+  background: #ccc;
+  height: 10px;
+  width: 10px;
+  display: block;
+  margin: 20px auto;
+}
+
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+  width: 100%;
+}
+
+.portfolio-carousel {
+  .carousel-fade {
+    .carousel-control {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 10%;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+      text-shadow: none;
+      background-color: rgba(0,0,0,0);
+      background: #555555 !important;
+      filter: alpha(opacity=50);
+      opacity: .5;
+      height: 45px !important;
+      margin-top: 33%;
+      background-image: none;
+      padding-top: 5px;
+      font-weight: 100;
+      @media only screen and (max-width: 767px) {
+        font-size: 10px;
+        padding-top: 13px;
+      }
+    }
+    .right {
+      right: 0 !important;
+    }
+    .left {
+      left: 0 !important;
+    }
+    .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+      width: 30px;
+      height: 30px;
+      margin-top: -10px;
+      font-size: 20px;
+    }
+  }
+}
+
+.portfolio-carousel__sr {
+  .carousel-fade {
+    .carousel-control {
+      margin-top: 20%;
+      @media only screen and (max-width: 766px) {
+        margin-top: 35%;
+      }
+      @media only screen and (max-width: 476px) {
+        margin-top: 65%;
+      }
+    }
+  }
+  img {
+    @media only screen and (max-width: 766px) {
+      max-width: 250px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

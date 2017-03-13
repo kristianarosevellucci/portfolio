@@ -1,0 +1,68 @@
+.clients {
+  height: 200px;
+  margin-top: 50px;
+  overflow: hidden;
+  .clients__wrapper--client {
+    text-align: center;
+    width: 200px;
+    height: 250px;
+    float: left;
+    position: relative;
+    img {
+      border: none;
+      display: block;
+      margin: 0 auto;
+      margin-top: 25%;
+    }
+    span {
+      display: none;
+    }
+    &:hover {
+      span {
+        background-color: #333;
+        color: #fff;
+        font-family: Arial, Geneva, SunSans-Regular, sans-serif;
+        font-size: 14px;
+        line-height: 22px;
+        display: inline-block;
+        width: 100px;
+        padding: 2px 0;
+        margin: 0 0 0 -50px;
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        border-radius: 3px;
+      }
+    }
+  }
+
+}
+
+.clients__left {
+  height: 200px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, rgba(232, 232, 232, 1) , rgba(0, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(232, 232, 232, 1), rgba(0, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(232, 232, 232, 1), rgba(0, 0, 0, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(232, 232, 232, 1), rgba(0, 0, 0, 0)); /* Standard syntax */
+  position: absolute;
+  z-index: 1;
+}
+
+.clients__right {
+  height: 200px;
+  width: 200px;
+  background: rgba(0, 0, 0, 0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right, rgba(232, 232, 232, 1) , rgba(0, 0, 0, 0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, rgba(232, 232, 232, 1), rgba(0, 0, 0, 0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(left, rgba(232, 232, 232, 1), rgba(0, 0, 0, 0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, rgba(232, 232, 232, 1), rgba(0, 0, 0, 0)); /* Standard syntax */
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+.clients__logo {
+  width: 150px;
+}

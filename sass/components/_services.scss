@@ -1,0 +1,54 @@
+/*---------- Homepage Services ----------*/
+.services {
+  background: white;
+  border-top: 1px solid #e8e8e8;
+  font-weight: 300;
+  padding-top: 50px;
+  transition: 0.2s;
+}
+
+.services__title {
+  text-transform: uppercase;
+  color: #555;
+}
+
+.services__subtitle {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 300;
+}
+
+.services__category {
+  padding: 50px;
+  transition: 0.2s;
+  @media only screen and (max-width: 1199px) {
+    padding: 20px;
+  }
+  @media only screen and (max-width: 767px) {
+    border-bottom: 1px solid #e8e8e8;
+  }
+  &:hover {
+    background: $pink;
+    color: white;
+    .fa {
+      color: white !important;
+    }
+  }
+}
+
+.services__category--icon {
+  color: #c9c9c9;
+  font-size: 85px !important;
+  display: block !important;
+  margin: 30px auto 50px !important;
+  text-align: center;
+  @media only screen and (max-width: 991px) {
+    text-align: left;
+  }
+}
+
+.services__category--title {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
