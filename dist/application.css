@@ -617,6 +617,15 @@ footer {
       background-size: cover;
       height: 500px; } }
 
+.error-hero {
+  background: black url("../images/404-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+
 .sr-hero {
   background: black url("../images/sr-hero-color.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -913,6 +922,20 @@ footer {
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.error-text {
+  margin-top: -75px; }
+
+.error-header {
+  color: #cca547;
+  font-family: 'Playfair Display', serif;
+  font-size: 75px; }
+
+.error-lead {
+  color: #cca547;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 0; }
 
 /*---------- About Section ----------*/
 .about__text {

@@ -33,6 +33,16 @@
   }
 }
 
+.error-hero {
+  background: black url('../images/404-bg.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
 .sr-hero {
   background: black url('../images/sr-hero-color.jpg') no-repeat center center;
   -webkit-background-size: cover;
