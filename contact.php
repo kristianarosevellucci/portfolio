@@ -1,43 +1,48 @@
 <?php
 
-if (isset($_POST["submit"])) {
-  $name = $_POST['name'];
-  $subject = $_POST['subject'];
-  $email = $_POST['email'];
-  $message = $_POST['message'];
-  $human = intval($_POST['human']);
-  $from = 'Kristianavellucci.com Contact Form';
-  $to = 'hello@kvellucci.com';
-  $subject = 'Message from Portfolio Website ';
+ // configure
+ $from = 'Contact form <hello@kvellucci.com>';
+ $sendTo = 'Contact form <hello@kvellucci.com>';
+ $subject = 'New message from kristianavellucci.com';
+ $fields = array('name' => 'Name', 'subject' => 'Subject', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
+ $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
+ $errorMessage = 'There was an error while submitting the form. Please try again later';
 
-  $body = "From: $name\n Subject: $subject\n E-Mail: $email\n Message:\n $message";
+ // let's do the sending
 
-  // Check if name has been entered
-  if (!$_POST['name']) {
-  	$errName = 'Please enter your name';
-  }
+ try
+ {
+     $emailText = "You have new message from kristianavellucci.com";
 
-  // Check if email has been entered and is valid
-  if (!$_POST['email'] || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-  	$errEmail = 'Please enter a valid email address';
-  }
+     foreach ($_POST as $key => $value) {
 
-  //Check if message has been entered
-  if (!$_POST['message']) {
-  	$errMessage = 'Please enter your message';
-  }
-  //Check if simple anti-bot test is correct
-  if ($human !== 5) {
-  	$errHuman = 'Your anti-spam is incorrect';
-  }
+         if (isset($fields[$key])) {
+             $emailText .= "$fields[$key]: $value\n";
+         }
+     }
 
-  // If there are no errors, send the email
-  if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
-  	if (mail ($to, $subject, $body, $from)) {
-      header('Location: thank-you.html');
-      exit();
-  	} else {
-  		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-  	}
-  }
-?>
+     $headers = array('Content-Type: text/plain; charset="UTF-8";',
+         'From: ' . $from,
+         'Reply-To: ' . $from,
+         'Return-Path: ' . $from,
+     );
+
+     mail($sendTo, $subject, $emailText, implode("\n", $headers));
+
+     $responseArray = array('type' => 'success', 'message' => $okMessage);
+ }
+ catch (\Exception $e)
+ {
+     $responseArray = array('type' => 'danger', 'message' => $errorMessage);
+ }
+
+ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
+       $encoded = json_encode($responseArray);
+
+     header('Content-Type: application/json');
+
+     echo $encoded;
+ }
+ else {
+     echo $responseArray['message'];
+ }
