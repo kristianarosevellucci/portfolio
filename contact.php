@@ -12,7 +12,7 @@ $errorMessage = 'There was an error while submitting the form. Please try again 
 
 try
 {
-    $emailText = "You have new message from contact form\n=============================\n";
+    $emailText = "You have new message from Kristianavellucci.com;
 
     foreach ($_POST as $key => $value) {
 
@@ -29,10 +29,6 @@ try
 
     mail($sendTo, $subject, $emailText, implode("\n", $headers));
 
-//Added this line
-    header('Location: thank-you.html');
-    exit();
-
     $responseArray = array('type' => 'success', 'message' => $okMessage);
 }
 catch (\Exception $e)
@@ -43,7 +39,7 @@ catch (\Exception $e)
 if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
     $encoded = json_encode($responseArray);
 
-    header('Content-Type: application/json');
+    header('Location: thank-you.html');
 
     echo $encoded;
 }
