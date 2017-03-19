@@ -448,6 +448,23 @@ body,
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: none; }
 
+.thankyou-header {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center; }
+
+.thankyou-lead {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white; }
+
+.thankyou-text {
+  position: absolute;
+  bottom: 10px;
+  width: 100%; }
+
+.thankyou-parent {
+  height: 85vh; }
+
 .clients {
   height: 200px;
   margin-top: 50px;
@@ -619,6 +636,15 @@ footer {
 
 .error-hero {
   background: black url("../images/404-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh; }
+
+.thankyou-hero {
+  background: black url("../images/thankyou-bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -927,12 +953,12 @@ footer {
   margin-top: -75px; }
 
 .error-header {
-  color: #cca547;
+  color: #ad4e5b;
   font-family: 'Playfair Display', serif;
   font-size: 75px; }
 
 .error-lead {
-  color: #cca547;
+  color: #ad4e5b;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px 0; }
