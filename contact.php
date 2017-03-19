@@ -35,7 +35,6 @@ if (isset($_POST["submit"])) {
   if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
   	if (mail ($to, $subject, $body, $from)) {
       header('Location: thank-you.php');
-      exit();
   	} else {
   		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
   	}
