@@ -41,7 +41,7 @@ $headers = 'From: me@kristianavellucci.com' . "\r\n" .
   // If there are no errors, send the email
   if (!$errName && !$errEmail && !$errMessage && !$errHuman) {
   	if (mail ($to, $subject, $body, $headers)) {
-      header('Location: thank-you.php');
+      header('Location: thank-you.html');
   	} else {
   		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
   	}

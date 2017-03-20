@@ -2,6 +2,7 @@ $(function () {
 
     $('#contact-form').validator();
 
+/*
     $('#contact-form').on('submit', function (e) {
         if (!e.isDefaultPrevented()) {
             var url = "contact.php";
@@ -25,4 +26,5 @@ $(function () {
             return false;
         }
     })
+*/
 });
