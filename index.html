@@ -450,7 +450,8 @@
           <p class="padding-tb-15">Have you enjoyed your visit? Want to talk about new projects or have freelance inquiries? Or maybe you just need a willing victim to practice your whale-intended puns on. Either way, tell me about it! I promise I'll get back to you as soon as possible.</p>
 
           <form id="contact-form" method="post" action="contact.php" role="form">
-            <div class="row">
+            <input type="hidden" name="human" />
+	    <div class="row">
               <div class="col-sm-6">
                 <div class="form-group">
               		<input type="text" class="form-control contact__input" id="name" name="name" placeholder="Name" required="required">
