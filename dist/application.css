@@ -450,20 +450,19 @@ body,
 
 .thankyou-header {
   font-family: 'Playfair Display', serif;
-  color: white;
-  text-align: center; }
+  color: #ad4e5b;
+  text-align: center;
+  font-size: 46px; }
 
 .thankyou-lead {
   font-family: 'Source Sans Pro', sans-serif;
-  color: white; }
-
-.thankyou-text {
-  position: absolute;
-  bottom: 10px;
-  width: 100%; }
+  color: #ad4e5b;
+  font-size: 18px;
+  margin-top: 25px; }
 
 .thankyou-parent {
-  height: 85vh; }
+  height: 85vh;
+  margin-top: -25px; }
 
 .clients {
   height: 200px;
