@@ -41,6 +41,14 @@
   background-size: cover;
   background-attachment: fixed;
   height: 100vh;
+  @media only screen and (max-width: 600px) {
+    background: black url('../images/404-bg-mob.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 700px;
+  }
 }
 
 .thankyou-hero {

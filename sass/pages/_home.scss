@@ -67,10 +67,16 @@
 
 .featured-work__title--identity {
   left: 27%;
+  @media only screen and (max-width: 767px) {
+    left: 7%;
+  }
 }
 
 .featured-work__title--art {
   left: 30%;
+  @media only screen and (max-width: 767px) {
+    left: 7%;
+  }
 }
 
 .featured-work__lead {

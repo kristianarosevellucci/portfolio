@@ -215,96 +215,105 @@ body {
   background: black url("../images/blog-1-bg.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--feature1 {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--feature1 {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog__post--feature2 {
   height: 425px;
   background: black url("../images/blog-gender-gap.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--feature2 {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--feature2 {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog__post--feature3 {
   height: 425px;
   background: black url("../images/blog-design2016.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--feature3 {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--feature3 {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog__post--feature4 {
   height: 425px;
   background: black url("../images/blog-inspired-by-kruger2.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--feature4 {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--feature4 {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog__post--woods {
   height: 425px;
   background: black url("../images/blog-woods.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--woods {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--woods {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog__post--boy {
   height: 425px;
   background: black url("../images/blog-boy.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--boy {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--boy {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover;
+      background-position: top; } }
 
 .blog__post--new {
   height: 425px;
   background: black url("../images/blog-new-designer.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--new {
-      height: 375px; } }
+      height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--new {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog__post--denzler {
   height: 425px;
   background: black url("../images/blog-denzler.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
     .blog__post--denzler {
       height: 375px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--denzler {
-      height: 350px; } }
+      height: 350px;
+      background-size: cover; } }
 
 .blog h2 {
   margin-bottom: 50px; }
@@ -386,8 +395,8 @@ body {
 
 .carousel-indicators__square {
   background: #ccc;
-  height: 10px;
-  width: 10px;
+  height: 20px;
+  width: 20px;
   display: block;
   margin: 20px auto; }
 
@@ -691,6 +700,14 @@ footer {
   background-size: cover;
   background-attachment: fixed;
   height: 100vh; }
+  @media only screen and (max-width: 600px) {
+    .error-hero {
+      background: black url("../images/404-bg-mob.jpg") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: 700px; } }
 
 .thankyou-hero {
   background: black url("../images/thankyou-bg.jpg") no-repeat center center;
@@ -1087,9 +1104,15 @@ footer {
 
 .featured-work__title--identity {
   left: 27%; }
+  @media only screen and (max-width: 767px) {
+    .featured-work__title--identity {
+      left: 7%; } }
 
 .featured-work__title--art {
   left: 30%; }
+  @media only screen and (max-width: 767px) {
+    .featured-work__title--art {
+      left: 7%; } }
 
 .featured-work__lead {
   font-size: 18px;
