@@ -9,10 +9,17 @@
     line-height: 1;
     margin-top: 0;
     text-transform: uppercase;
+    @media only screen and (max-width: 950px) {
+      font-size: 38px;
+      margin-bottom: 25px;
+    }
   }
   p {
     font-size: 16px;
     font-weight: 300;
+    @media only screen and (max-width: 767px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -24,6 +31,9 @@
 
 .about__text--title {
   margin-left: 25px;
+  @media only screen and (max-width: 767px) {
+    margin-left: 0;
+  }
 }
 
 .blog {
@@ -91,6 +101,9 @@
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: 700;
+  @media only screen and (max-width : 767px) {
+    right: 25px;
+  }
 }
 
 .featured-work__slider--title {
@@ -102,12 +115,16 @@
   letter-spacing: 5px;
   font-size: 16px;
   @media only screen and (max-width : 767px) {
-    font-size: 12px;
+    font-size: 10px;
+    bottom: 0;
   }
 }
 
 .recent-work__item {
   width: 94%;
+  @media only screen and (max-width : 767px) {
+    width: 100%;
+  }
 }
 
 /*---------- Resume Section ----------*/

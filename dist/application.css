@@ -163,14 +163,15 @@ body {
       position: absolute;
       bottom: 150px;
       width: 65%;
-      left: 60px; }
+      left: 50px; }
     .blog__post:hover p {
       opacity: 1;
       bottom: 100px;
       color: white;
       font-size: 14px;
       font-weight: 100;
-      width: 62%; }
+      width: 65%;
+      left: 50px; }
     .blog__post:hover .blog__post--hover {
       background: rgba(0, 0, 0, 0.8); }
     .blog__post:hover .blog__post--content-box {
@@ -180,7 +181,7 @@ body {
   .blog__post .blog__post--hover {
     height: 100%;
     width: 100%;
-    padding: 50px; }
+    padding: 25px; }
   .blog__post .blog__post--content-box {
     border: none;
     height: 100%;
@@ -214,48 +215,96 @@ body {
   background: black url("../images/blog-1-bg.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--feature1 {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--feature1 {
+      height: 350px; } }
 
 .blog__post--feature2 {
   height: 425px;
   background: black url("../images/blog-gender-gap.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--feature2 {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--feature2 {
+      height: 350px; } }
 
 .blog__post--feature3 {
   height: 425px;
   background: black url("../images/blog-design2016.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--feature3 {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--feature3 {
+      height: 350px; } }
 
 .blog__post--feature4 {
   height: 425px;
   background: black url("../images/blog-inspired-by-kruger2.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--feature4 {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--feature4 {
+      height: 350px; } }
 
 .blog__post--woods {
   height: 425px;
   background: black url("../images/blog-woods.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--woods {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--woods {
+      height: 350px; } }
 
 .blog__post--boy {
   height: 425px;
   background: black url("../images/blog-boy.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--boy {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--boy {
+      height: 350px; } }
 
 .blog__post--new {
   height: 425px;
   background: black url("../images/blog-new-designer.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--new {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--new {
+      height: 350px; } }
 
 .blog__post--denzler {
   height: 425px;
   background: black url("../images/blog-denzler.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
+  @media only screen and (max-width: 950px) {
+    .blog__post--denzler {
+      height: 375px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--denzler {
+      height: 350px; } }
 
 .blog h2 {
   margin-bottom: 50px; }
@@ -321,7 +370,7 @@ body {
   filter: alpha(opacity=50);
   opacity: .5;
   height: 45px !important;
-  margin-top: 250px;
+  margin-top: 20%;
   background-image: none;
   padding-top: 5px;
   font-weight: 100; }
@@ -414,7 +463,8 @@ body,
   margin-top: 20px; }
   @media only screen and (max-width: 991px) {
     .contact__blocks--orange {
-      width: 10px; } }
+      width: 10px;
+      margin-left: 10px; } }
 
 .contact__blocks--right {
   padding-top: 250px; }
@@ -777,6 +827,9 @@ footer {
   right: 175px;
   bottom: 85px;
   width: 175px; }
+  @media only screen and (max-width: 767px) {
+    .header__services {
+      right: 75px; } }
 
 #nav-content {
   position: fixed;
@@ -950,17 +1003,28 @@ footer {
 
 .error-text {
   margin-top: -75px; }
+  @media only screen and (max-width: 767px) {
+    .error-text {
+      margin-top: -25px; } }
 
 .error-header {
   color: #ad4e5b;
   font-family: 'Playfair Display', serif;
   font-size: 75px; }
+  @media only screen and (max-width: 767px) {
+    .error-header {
+      font-size: 52px; } }
 
 .error-lead {
   color: #ad4e5b;
   text-transform: uppercase;
   letter-spacing: 2px;
   padding: 10px 0; }
+  @media only screen and (max-width: 767px) {
+    .error-lead {
+      letter-spacing: 0;
+      text-transform: none;
+      font-size: 16px; } }
 
 /*---------- About Section ----------*/
 .about__text {
@@ -973,9 +1037,16 @@ footer {
     line-height: 1;
     margin-top: 0;
     text-transform: uppercase; }
+    @media only screen and (max-width: 950px) {
+      .about__text .title {
+        font-size: 38px;
+        margin-bottom: 25px; } }
   .about__text p {
     font-size: 16px;
     font-weight: 300; }
+    @media only screen and (max-width: 767px) {
+      .about__text p {
+        font-size: 14px; } }
 
 .about__portrait {
   width: 275px;
@@ -984,6 +1055,9 @@ footer {
 
 .about__text--title {
   margin-left: 25px; }
+  @media only screen and (max-width: 767px) {
+    .about__text--title {
+      margin-left: 0; } }
 
 .blog {
   min-height: 550px; }
@@ -1041,6 +1115,9 @@ footer {
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   font-weight: 700; }
+  @media only screen and (max-width: 767px) {
+    .featured-work__slider--count {
+      right: 25px; } }
 
 .featured-work__slider--title {
   position: absolute;
@@ -1052,10 +1129,14 @@ footer {
   font-size: 16px; }
   @media only screen and (max-width: 767px) {
     .featured-work__slider--title {
-      font-size: 12px; } }
+      font-size: 10px;
+      bottom: 0; } }
 
 .recent-work__item {
   width: 94%; }
+  @media only screen and (max-width: 767px) {
+    .recent-work__item {
+      width: 100%; } }
 
 /*---------- Resume Section ----------*/
 .resume {
@@ -1187,7 +1268,7 @@ footer {
 .gallery__work-title {
   color: #e8e8e8;
   font-family: 'Playfair Display', serif;
-  font-size: 52px;
+  font-size: 42px;
   font-weight: 800;
   line-height: .9; }
   @media only screen and (max-width: 1065px) {
