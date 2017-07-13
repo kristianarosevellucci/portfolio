@@ -1,19 +1,25 @@
 .contact__input {
   width: 100%;
   outline: none;
-  margin: 5px 0;
-  padding: 10px;
-  border: solid 1px #ccc;
+  margin: 15px 0 35px;
+  padding: 20px 0;
+  border: none;
+  border-bottom: 5px solid #ccc;
+  box-shadow: none;
+  bckground: none;
   color: #5d5d5d;
   font-weight: 300;
   font-family: 'Source Sans Pro',sans-serif;
+  &:focus {
+    box-shadow: none;
+    border-bottom: 5px solid $almost-black;
+  }
 }
 
-.contact__input--message {
-  height: 150px;
+.contact__input-message {
   resize: none;
-  border: solid 1px #ccc;
   color: #5d5d5d;
   font-weight: 300;
   font-family: 'Source Sans Pro',sans-serif;
+  height: 242px !important; //overwrites bootstrap
 }

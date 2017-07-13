@@ -1,6 +1,5 @@
 .header {
   height: 90vh;
-  margin-top: 35px;
   @media only screen and (max-width: 767px) {
     height: auto;
   }
@@ -90,6 +89,15 @@
 
 .reviewsii-hero {
   background: black url('../images/reviewsii-hero-v2.jpg') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mobials-hero {
+  background: black url('../images/duck-fam-bg.jpg') no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
