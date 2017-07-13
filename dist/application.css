@@ -599,8 +599,7 @@ body,
 
 /*---------- Footer ----------*/
 footer {
-  background: #181719;
-  margin-top: 100px; }
+  background: #181719; }
   @media only screen and (max-width: 767px) {
     footer {
       text-align: center; } }
@@ -686,6 +685,9 @@ footer {
   @media only screen and (max-width: 767px) {
     .footer-logo {
       margin: 0 auto; } }
+
+.home-footer {
+  margin-top: 100px; }
 
 .header {
   height: 90vh; }

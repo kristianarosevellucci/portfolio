@@ -1,7 +1,6 @@
 /*---------- Footer ----------*/
 footer {
   background: $almost-black;
-  margin-top: 100px;
   @media only screen and (max-width : 767px) {
     text-align: center;
   }
@@ -108,4 +107,8 @@ footer {
   @media only screen and (max-width : 767px) {
     margin: 0 auto;
   }
+}
+
+.home-footer {
+  margin-top: 100px;
 }
