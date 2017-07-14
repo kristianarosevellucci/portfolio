@@ -101,7 +101,7 @@
 
 h2 {
   font-size: 50px;
-  color: #666666; }
+  color: #555555; }
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
@@ -361,6 +361,16 @@ body {
 
 .blog h2 {
   margin-bottom: 50px; }
+
+.blog__title {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  font-size: 50px;
+  margin-top: 100px; }
+  @media only screen and (max-width: 767px) {
+    .blog__title {
+      margin-top: 0;
+      padding: 75px 0 150px; } }
 
 .carousel {
   position: relative;
@@ -653,12 +663,18 @@ footer {
   color: white;
   text-align: right;
   padding-right: 40px; }
+  @media only screen and (max-width: 1100px) {
+    .footer__branding {
+      font-size: 35px; } }
   .footer__branding a {
     bottom: 40%;
     cursor: pointer;
     position: absolute;
     right: -10px;
     transition: 0.5s ease-in-out; }
+    @media only screen and (max-width: 1100px) {
+      .footer__branding a {
+        right: 20px; } }
     .footer__branding a:hover {
       color: white;
       right: 20px;
@@ -1080,8 +1096,8 @@ footer {
 
 /*---------- About Section ----------*/
 .about__text {
-  background: repeating-linear-gradient(135deg, white, #e8e8e8 1px, white 2px, white 10px);
-  margin: 35px 0; }
+  background: white;
+  border-bottom: 1px solid #e8e8e8; }
   .about__text .title {
     font-weight: 900;
     font-size: 50px;
@@ -1211,14 +1227,13 @@ footer {
   font-size: 50px;
   color: white; }
 
+/*----- Colours Circles -----*/
 .colors__box {
-  height: 225px;
-  color: white; }
+  height: 225px; }
 
 .colors__circle {
   height: 200px;
-  width: 200px;
-  color: white; }
+  width: 200px; }
   @media only screen and (max-width: 979px) {
     .colors__circle {
       height: 180px;
@@ -1275,10 +1290,10 @@ footer {
   background: #e8e8e8; }
 
 .colors__box--mobials-charcoal {
-  background: #333333; }
+  background: #181719; }
 
 .colors h2, .typography h2 {
-  color: #e0e0e0;
+  color: #181719;
   font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   padding-bottom: 25px; }
@@ -1286,6 +1301,7 @@ footer {
 .colors {
   border-top: 1px solid #e8e8e8; }
 
+/*----- Typography Sections -----*/
 .type__intro {
   font-size: 100px; }
 
@@ -1305,6 +1321,7 @@ footer {
   font-size: 25px;
   margin-top: 0; }
 
+/*----- SoftwareReviews Styles -----*/
 .desktop-survey {
   background: black url("../images/sr-desktop.jpg") no-repeat center center;
   -webkit-background-size: cover;
@@ -1319,6 +1336,7 @@ footer {
     text-transform: uppercase;
     line-height: 1; }
 
+/*----- Gallery Content -----*/
 .gallery-content {
   margin-left: 30px; }
   @media only screen and (max-width: 767px) {
@@ -1327,10 +1345,9 @@ footer {
 
 .gallery__tab {
   border: none !important;
-  color: #555;
-  padding: 5px 0 !important;
+  color: #555555;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300; }
+  padding: 5px 0 !important; }
   .gallery__tab:hover {
     background: none !important;
     color: #ad4e5b; }
@@ -1341,23 +1358,22 @@ footer {
 .gallery__titles {
   color: #cca547;
   font-family: 'Playfair Display', serif;
-  font-size: 35px;
-  font-weight: 800; }
+  font-size: 35px; }
 
 .gallery__work-title {
   color: #cca547;
   font-family: 'Playfair Display', serif;
   font-size: 42px;
-  font-weight: 800;
   line-height: .9; }
   @media only screen and (max-width: 1065px) {
     .gallery__work-title {
       font-size: 35px; } }
 
+/*----- Homepage Portfolio Styles -----*/
 .portfolio-lead {
   font-family: 'Playfair Display', serif;
   font-size: 35px !important;
-  color: #555; }
+  color: #555555; }
   @media only screen and (max-width: 979px) {
     .portfolio-lead {
       font-size: 35px !important;
@@ -1367,8 +1383,7 @@ footer {
   font-family: 'Playfair Display', serif; }
 
 .portfolio-piece__title {
-  font-family: 'playfair display', serif;
-  color: white;
+  font-family: 'Playfair Display', serif;
   font-size: 75px;
   margin-top: 100px; }
   @media only screen and (max-width: 767px) {
@@ -1377,14 +1392,13 @@ footer {
       font-size: 60px; } }
 
 .portfolio-piece__lead {
-  color: white;
   font-size: 20px; }
 
 .portfolio-piece__location {
-  color: white;
   font-size: 12px;
   text-transform: uppercase; }
 
+/*----- About Sections -----*/
 .about-facts {
   margin-top: -15px;
   text-align: right; }
@@ -1400,11 +1414,10 @@ footer {
   margin-bottom: 0; }
 
 .about-facts__link {
-  font-weight: 300;
-  color: #333;
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif; }
 
+/*----- Sketches Page -----*/
 .sketch-thumbnails {
   height: 1000px; }
 
@@ -1423,10 +1436,10 @@ footer {
   z-index: 2; }
 
 .thumbnail__alex {
-  width: 50%;
   position: absolute;
   top: 300px;
   left: 20%;
+  width: 50%;
   z-index: 1; }
 
 .thumbnail-sketch__alex {
@@ -1452,6 +1465,7 @@ footer {
   left: 225px;
   z-index: 2; }
 
+/*----- Reviewsii Page -----*/
 .reviewsii-booklet {
   background: #f8f8f8; }
   .reviewsii-booklet h2 {
@@ -1480,88 +1494,100 @@ footer {
   margin-top: 0; }
 
 .portfolio-nav__previous {
-  color: #555;
+  color: #555555;
   transition: 0.5s ease; }
   .portfolio-nav__previous:hover {
     color: white; }
 
 .portfolio-nav__next {
-  color: #555;
+  color: #555555;
   transition: 0.5s ease; }
   .portfolio-nav__next:hover {
     color: white; }
 
-.portfolio-nav__next--sr {
+.portfolio-nav__next--sr,
+.portfolio-nav__next--tempo,
+.portfolio-nav__next--sketches,
+.portfolio-nav__next--reviewsii,
+.portfolio-nav__next--mobials {
   background: #f8f8f8; }
-  .portfolio-nav__next--sr:hover {
-    background: black url("../images/portfolio-nav-sketches.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
 
-.portfolio-nav__previous--sr {
+.portfolio-nav__previous--sr,
+.portfolio-nav__previous--tempo,
+.portfolio-nav__previous--sketches,
+.portfolio-nav__previous--reviewsii,
+.portfolio-nav__previous--mobials {
   background: #e8e8e8; }
-  .portfolio-nav__previous--sr:hover {
-    background: black url("../images/portfolio-nav-reviewsii.jpg") no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
 
-.portfolio-nav__next--tempo {
-  background: #f8f8f8; }
-  .portfolio-nav__next--tempo:hover {
-    background: black url("../images/portfolio-nav-reviewsii.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.portfolio-nav__next--sr:hover {
+  background: black url("../images/portfolio-nav-sketches.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.portfolio-nav__previous--tempo {
-  background: #e8e8e8; }
-  .portfolio-nav__previous--tempo:hover {
-    background: black url("../images/portfolio-nav-sketches.jpg") no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.portfolio-nav__previous--sr:hover {
+  background: black url("../images/portfolio-nav-mobials.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.portfolio-nav__next--sketches {
-  background: #f8f8f8; }
-  .portfolio-nav__next--sketches:hover {
-    background: black url("../images/portfolio-nav-tempo.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.portfolio-nav__next--tempo:hover {
+  background: black url("../images/portfolio-nav-reviewsii.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.portfolio-nav__previous--sketches {
-  background: #e8e8e8; }
-  .portfolio-nav__previous--sketches:hover {
-    background: black url("../images/portfolio-nav-softwarereviews.jpg") no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.portfolio-nav__previous--tempo:hover {
+  background: black url("../images/portfolio-nav-sketches.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.portfolio-nav__next--reviewsii {
-  background: #f8f8f8; }
-  .portfolio-nav__next--reviewsii:hover {
-    background: black url("../images/portfolio-nav-softwarereviews.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.portfolio-nav__next--sketches:hover {
+  background: black url("../images/portfolio-nav-tempo.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
-.portfolio-nav__previous--reviewsii {
-  background: #e8e8e8; }
-  .portfolio-nav__previous--reviewsii:hover {
-    background: black url("../images/portfolio-nav-sketches.jpg") no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
+.portfolio-nav__previous--sketches:hover {
+  background: black url("../images/portfolio-nav-softwarereviews.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.portfolio-nav__next--reviewsii:hover {
+  background: black url("../images/portfolio-nav-mobials.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.portfolio-nav__previous--reviewsii:hover {
+  background: black url("../images/portfolio-nav-sketches.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.portfolio-nav__next--mobials:hover {
+  background: black url("../images/portfolio-nav-softwarereviews.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.portfolio-nav__previous--mobials:hover {
+  background: black url("../images/portfolio-nav-reviewsii.jpg") no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .about__softwarereviews {
   margin-top: 50px; }
@@ -1569,12 +1595,5 @@ footer {
     .about__softwarereviews {
       margin-top: 0; } }
 
-.blog__title {
-  font-family: 'playfair display', serif;
-  color: white;
-  font-size: 50px;
-  margin-top: 100px; }
-  @media only screen and (max-width: 767px) {
-    .blog__title {
-      margin-top: 0;
-      padding: 75px 0 150px; } }
+.sr-hero__phone {
+  max-width: 300px; }

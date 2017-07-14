@@ -1,7 +1,7 @@
 /*---------- About Section ----------*/
 .about__text {
-  background: repeating-linear-gradient(135deg, white, #e8e8e8 1px, white 2px, white 10px);
-  margin: 35px 0;
+  background: white;
+  border-bottom: 1px solid $light-grey;
   .title {
     font-weight: 900;
     font-size: 50px;

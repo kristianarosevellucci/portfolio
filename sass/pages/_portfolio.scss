@@ -1,12 +1,11 @@
+/*----- Colours Circles -----*/
 .colors__box {
   height: 225px;
-  color: white;
 }
 
 .colors__circle {
   height: 200px;
   width: 200px;
-  color: white;
   @media only screen and (max-width : 979px) {
     height: 180px;
     width: 180px;
@@ -67,7 +66,7 @@
 }
 
 .colors__box--mobials-grey {
-  background: #cccccc;
+  background: $grey;
 }
 
 .colors__box--mobials-purple2 {
@@ -75,17 +74,17 @@
 }
 
 .colors__box--mobials-lg {
-  background: #e8e8e8;
+  background: $light-grey;
 }
 
 .colors__box--mobials-charcoal {
-  background: #333333;
+  background: $almost-black;
 }
 
 
 .colors, .typography {
   h2 {
-    color: #e0e0e0;
+    color: $almost-black;
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
     padding-bottom: 25px;
@@ -93,8 +92,11 @@
 }
 
 .colors {
-  border-top: 1px solid #e8e8e8;
+  border-top: 1px solid $light-grey;
 }
+
+
+/*----- Typography Sections -----*/
 
 .type__intro {
   font-size: 100px;
@@ -121,6 +123,8 @@
   margin-top: 0;
 }
 
+
+/*----- SoftwareReviews Styles -----*/
 .desktop-survey {
   background: black url('../images/sr-desktop.jpg') no-repeat center center;
   -webkit-background-size: cover;
@@ -137,6 +141,9 @@
   }
 }
 
+
+/*----- Gallery Content -----*/
+
 .gallery-content {
   margin-left: 30px;
   @media only screen and (max-width: 767px) {
@@ -145,17 +152,16 @@
 }
 
 .gallery__tab {
-  border: none !important;
-  color: #555;
-  padding: 5px 0 !important;
+  border: none !important; //overwrites bootstrap
+  color: $text;
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 300;
+  padding: 5px 0 !important; //overwrites bootstrap
   &:hover {
-    background: none !important;
+    background: none !important; //overwrites bootstrap
     color: $pink;
   }
   @media only screen and (max-width: 1065px) {
-    padding: 3px 0 !important;
+    padding: 3px 0 !important; //overwrites bootstrap
   }
 }
 
@@ -163,24 +169,28 @@
   color: $orange;
   font-family: 'Playfair Display', serif;
   font-size: 35px;
-  font-weight: 800;
 }
 
 .gallery__work-title {
   color: $orange;
   font-family: 'Playfair Display', serif;
   font-size: 42px;
-  font-weight: 800;
   line-height: .9;
   @media only screen and (max-width: 1065px) {
     font-size: 35px;
   }
 }
 
+
+
+
+
+/*----- Homepage Portfolio Styles -----*/
+
 .portfolio-lead {
   font-family: 'Playfair Display', serif;
   font-size: 35px !important;
-  color: #555;
+  color: $text;
   @media only screen and (max-width : 979px) {
     font-size: 35px !important;
     line-height: .95;
@@ -194,8 +204,7 @@
 }
 
 .portfolio-piece__title {
-  font-family: 'playfair display', serif;
-  color: white;
+  font-family: 'Playfair Display', serif;
   font-size: 75px;
   margin-top: 100px;
   @media only screen and (max-width: 767px) {
@@ -205,15 +214,16 @@
 }
 
 .portfolio-piece__lead {
-  color: white;
   font-size: 20px;
 }
 
 .portfolio-piece__location {
-  color: white;
   font-size: 12px;
   text-transform: uppercase;
 }
+
+
+/*----- About Sections -----*/
 
 .about-facts {
   margin-top: -15px;
@@ -232,11 +242,12 @@
 }
 
 .about-facts__link {
-  font-weight: 300;
-  color: #333;
   font-size: 16px;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+
+/*----- Sketches Page -----*/
 
 .sketch-thumbnails {
   height: 1000px;
@@ -259,10 +270,10 @@
 }
 
 .thumbnail__alex {
-  width: 50%;
   position: absolute;
   top: 300px;
   left: 20%;
+  width: 50%;
   z-index: 1;
 }
 
@@ -292,8 +303,11 @@
   z-index: 2;
 }
 
+
+/*----- Reviewsii Page -----*/
+
 .reviewsii-booklet {
-  background: #f8f8f8;
+  background: $lightest-grey;
   h2 {
     font-family: 'Playfair Display', serif;
   }
@@ -316,7 +330,7 @@
 }
 
 .portfolio-blurb {
-  background: repeating-linear-gradient(135deg, white, #e8e8e8 1px, white 2px, white 10px);
+  background: repeating-linear-gradient(135deg, white, $light-grey 1px, white 2px, white 10px);
   margin: 35px 0;
 }
 
@@ -331,8 +345,13 @@
   }
 }
 
+
+
+
+
+
 .portfolio-nav__previous {
-  color: #555;
+  color: $text;
   transition: 0.5s ease;
   &:hover {
     color: white;
@@ -340,98 +359,86 @@
 }
 
 .portfolio-nav__next {
-  color: #555;
+  color: $text;
   transition: 0.5s ease;
   &:hover {
     color: white;
   }
 }
 
+.portfolio-nav__next--sr,
+.portfolio-nav__next--tempo,
+.portfolio-nav__next--sketches,
+.portfolio-nav__next--reviewsii,
+.portfolio-nav__next--mobials {
+  background: $lightest-grey;
+}
+
+.portfolio-nav__previous--sr,
+.portfolio-nav__previous--tempo,
+.portfolio-nav__previous--sketches,
+.portfolio-nav__previous--reviewsii,
+.portfolio-nav__previous--mobials {
+  background: $light-grey;
+}
+
 .portfolio-nav__next--sr {
-  background: #f8f8f8;
   &:hover {
-    background: black url('../images/portfolio-nav-sketches.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-sketches.jpg');
   }
 }
 
 .portfolio-nav__previous--sr {
-  background: #e8e8e8;
   &:hover {
-    background: black url('../images/portfolio-nav-reviewsii.jpg') no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-mobials.jpg');
   }
 }
 
 .portfolio-nav__next--tempo {
-  background: #f8f8f8;
   &:hover {
-    background: black url('../images/portfolio-nav-reviewsii.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-reviewsii.jpg');
   }
 }
 
 .portfolio-nav__previous--tempo {
-  background: #e8e8e8;
   &:hover {
-    background: black url('../images/portfolio-nav-sketches.jpg') no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-sketches.jpg');
   }
 }
 
 .portfolio-nav__next--sketches {
-  background: #f8f8f8;
   &:hover {
-    background: black url('../images/portfolio-nav-tempo.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-tempo.jpg');
   }
 }
 
 .portfolio-nav__previous--sketches {
-  background: #e8e8e8;
   &:hover {
-    background: black url('../images/portfolio-nav-softwarereviews.jpg') no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-softwarereviews.jpg');
   }
 }
 
 .portfolio-nav__next--reviewsii {
-  background: #f8f8f8;
   &:hover {
-    background: black url('../images/portfolio-nav-softwarereviews.jpg') no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-mobials.jpg');
   }
 }
 
 .portfolio-nav__previous--reviewsii {
-  background: #e8e8e8;
   &:hover {
-    background: black url('../images/portfolio-nav-sketches.jpg') no-repeat center bottom;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    @include full-bg('../images/portfolio-nav-sketches.jpg');
+  }
+}
+
+.portfolio-nav__next--mobials {
+  &:hover {
+    @include full-bg('../images/portfolio-nav-softwarereviews.jpg');
+  }
+}
+
+.portfolio-nav__previous--mobials {
+  &:hover {
+    @include full-bg('../images/portfolio-nav-reviewsii.jpg');
   }
 }
 
@@ -442,13 +449,6 @@
   }
 }
 
-.blog__title {
-  font-family: 'playfair display', serif;
-  color: white;
-  font-size: 50px;
-  margin-top: 100px;
-  @media only screen and (max-width : 767px) {
-    margin-top: 0;
-    padding: 75px 0 150px;
-  }
+.sr-hero__phone {
+  max-width: 300px;
 }

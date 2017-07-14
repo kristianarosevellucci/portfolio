@@ -56,16 +56,13 @@
 
 h2 {
   font-size: 50px;
-  color: #666666;
+  color: $text;
 }
 
 p {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
-
-
-
 
 .animated {
   -webkit-animation-duration: 1s;
