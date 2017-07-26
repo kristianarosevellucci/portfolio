@@ -234,16 +234,15 @@ body {
   .blog__post h3 {
     color: white;
     transition: 0.2s;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 30px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 26px;
     text-align: left;
     position: absolute;
     bottom: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 500;
     width: 70%;
     left: 30px;
-    line-height: .9; }
+    line-height: 1.2; }
     .blog__post h3:hover {
       margin-top: 100px; }
   .blog__post p {
@@ -295,7 +294,7 @@ body {
 
 .blog__post--feature4 {
   height: 425px;
-  background: black url("../images/blog-inspired-by-kruger2.jpg") no-repeat center center;
+  background: black url("../images/blog-glass-box.jpg") no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s; }
   @media only screen and (max-width: 1100px) {
@@ -316,6 +315,19 @@ body {
       height: 365px; } }
   @media only screen and (max-width: 825px) {
     .blog__post--woods {
+      height: 350px;
+      background-size: cover; } }
+
+.blog__post--glass {
+  height: 425px;
+  background: black url("../images/blog-glass-box.jpg") no-repeat center center;
+  background-size: 100% 100%;
+  transition: 0.3s; }
+  @media only screen and (max-width: 1100px) {
+    .blog__post--glass {
+      height: 365px; } }
+  @media only screen and (max-width: 825px) {
+    .blog__post--glass {
       height: 350px;
       background-size: cover; } }
 
@@ -708,6 +720,9 @@ footer {
 .home-footer {
   margin-top: 100px; }
 
+body {
+  overflow-x: hidden; }
+
 .header {
   height: 100vh; }
   @media only screen and (max-width: 767px) {
@@ -868,6 +883,14 @@ footer {
 
 .blog-woods {
   background: black url("../images/blog/woods-bg.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed; }
+
+.blog-glass {
+  background: black url("../images/blog/glass-bg.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

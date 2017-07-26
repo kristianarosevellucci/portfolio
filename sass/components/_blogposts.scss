@@ -45,16 +45,15 @@
   h3 {
     color: white;
     transition: 0.2s;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 30px;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 26px;
     text-align: left;
     position: absolute;
     bottom: 10px;
-    text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 500;
     width: 70%;
     left: 30px;
-    line-height: .9;
+    line-height: 1.2;
     &:hover {
       margin-top: 100px;
     }
@@ -113,7 +112,7 @@
 
 .blog__post--feature4 {
   height: 425px;
-  background: black url('../images/blog-inspired-by-kruger2.jpg') no-repeat center center;
+  background: black url('../images/blog-glass-box.jpg') no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s;
   @media only screen and (max-width: 1100px) {
@@ -128,6 +127,20 @@
 .blog__post--woods {
   height: 425px;
   background: black url('../images/blog-woods.jpg') no-repeat center center;
+  background-size: 100% 100%;
+  transition: 0.3s;
+  @media only screen and (max-width: 1100px) {
+    height: 365px;
+  }
+  @media only screen and (max-width: 825px) {
+    height: 350px;
+    background-size: cover;
+  }
+}
+
+.blog__post--glass {
+  height: 425px;
+  background: black url('../images/blog-glass-box.jpg') no-repeat center center;
   background-size: 100% 100%;
   transition: 0.3s;
   @media only screen and (max-width: 1100px) {
