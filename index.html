@@ -55,6 +55,15 @@
             <li class="nav-content__item"><a href="blog.html" class="nav-content__link">Blog</a></li>
             <li class="nav-content__item"><a href="contact.html" class="nav-content__link">Contact</a></li>
           </ul>
+          <div class="nav-content__credits text-center">
+            <div class="nav-content__social">
+              <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
+              <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
+              <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
+              <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
+            </div>
+            <p class="padding-tb-15">Made by yours truly.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -65,10 +74,19 @@
         <h1 class="hidden">Kristiana Vellucci Design</h1>
         <div class="row">
           <div class="col-md-12">
-            <a href="index.html"><img src="images/logo.png" alt="Logo" class="header__logo animated fadeInDown"></a>
+            <div id="scene">
+              <a href="index.html"><img src="images/logo.png" alt="Logo" class="header__logo animated fadeInDown"></a>
+              <div class="layer header-letter__w hidden-xs" data-depth=".10"><img src="images/w.png" class="header-letter"></div>
+              <div class="layer header-letter__e hidden-xs" data-depth="0.40"><img src="images/e.png" alt="Logo" class="header-letter"></div>
+              <div class="layer header-letter__l hidden-xs" data-depth="0.20"><img src="images/l.png" alt="Logo" class="header-letter"></div>
+              <div class="layer header-letter__c hidden-xs" data-depth="1.00"><img src="images/c.png" alt="Logo" class="header-letter"></div>
+              <div class="layer header-letter__o hidden-xs" data-depth="0.40"><img src="images/o.png" alt="Logo" class="header-letter"></div>
+              <div class="layer header-letter__m hidden-xs" data-depth="0.10"><img src="images/m.png" alt="Logo" class="header-letter"></div>
+              <div class="layer header-letter__e2 hidden-xs" data-depth="1.00"><img src="images/e.png" alt="Logo" class="header-letter"></div>
+              <div class="layer header-services hidden-xs" data-depth="0.60"><img src="images/header-services.png" alt="Logo" class="header-letter__services"></div>
+            </div>
           </div>
         </div>
-        <h1 class="header-greeting hidden">Fancy Meeting You Here</h1>
       </div>
     </section>
 
@@ -544,12 +562,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
     <script src="js/scrollreveal.min.js" type="text/javascript"></script>
+    <script src="js/parallax.js" type="text/javascript"></script>
     <script src="validator.js"></script>
     <script src="contact.js"></script>
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
+
+    // or, if you use jQuery
+    var scene = $('#scene').get(0)
+
+    var parallax = new Parallax(scene)
+    console.log(parallax)
+
     // Changing the defaults
     window.sr = ScrollReveal({ reset: false });
 

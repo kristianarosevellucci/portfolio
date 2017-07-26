@@ -2,25 +2,23 @@
     position: fixed;
     top: 0;
     right: -100%;
-    background: rgba(0, 0, 0, .9);
+    background: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     z-index: 100;
-    //display: none;
     transition: 1s;
     .nav-white {
       background: white;
-      width: 75%;
+      width: 350px;
       float: right;
       vertical-align: middle;
       display: table-cell;
-      height: 80%;
-      margin: 5% 0;
+      height: 100%;
+      margin: 0;
       -webkit-transition-delay: 1s; /* Safari */
       transition-delay: 1s;
       overflow: hidden;
       .button--hamburger {
-        margin-left: 10px;
         img {
           width: 15px;
           display: block;
@@ -40,20 +38,32 @@
 .nav-content__links {
   opacity: 0;
   margin-top: -50%;
+  padding: 0;
 }
+
+.nav-content__logo {
+  max-width: 115px;
+}
+
+.nav-content__credits {
+  position: absolute;
+  right: 75px;
+  bottom: 0;
+}
+
   .active-items {
     opacity: 1;
     transition: 1.5s;
     -webkit-transition-delay: .2s; /* Safari */
     transition-delay: .2s;
-    margin-top: 7%;
+    margin-top: 15%;
   }
 
   .menu__minified {
       position: fixed;
       top: 50%;
       right: 0;
-      background: #FFF;
+      background: white;
       padding: 1.25em 2.8125em 1.25em 1.5625em;
       font-size: 1em;
       text-transform: uppercase;
@@ -67,7 +77,6 @@
       outline: 0;
       box-shadow: -4px 0 18px 0 rgba(0,0,0,.28);
       z-index: 2;
-
   }
 
   #nav-toggle {
@@ -82,7 +91,7 @@
       width: 50px;
       height: 50px;
       display: block;
-      background: $pink;
+      background: $almost-black;
   }
 
   .menu__minified .button {
@@ -133,5 +142,20 @@
     &:hover {
       text-decoration: none;
       color: $pink;
+    }
+  }
+
+  .nav-content__social {
+    .fa {
+      transition: 0.5s;
+      font-size: 18px;
+      border-radius: 255px;
+      height: 40px;
+      width: 40px;
+      padding: 20px 0;
+      color: $almost-black;
+      &:hover {
+        color: $orange;
+      }
     }
   }
