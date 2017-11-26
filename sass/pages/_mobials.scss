@@ -1,0 +1,223 @@
+/*---------- Mobials Page ----------*/
+.portfolio-header--mobials {
+  background: black url('../images/mobials-hero.png') no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mobials-brand__color-container {
+  color: white;
+  height: 100px;
+  padding: 25px;
+  position: relative;
+  transition: .2s ease;
+  margin-right: 0;
+  &:hover {
+    box-shadow: -1px 3px 16px rgba(0, 0, 0, .2);
+    z-index: 2;
+    margin-right: -25px;
+    @media only screen and (max-width: $screen-xs-max) {
+      margin-right: 0;
+    }
+    .mobials-brand__color-label {
+      opacity: 1;
+    }
+  }
+}
+
+.mobials-brand__color-container--purple-1 {
+  background: #4c34a3;
+}
+
+.mobials-brand__color-container--purple-2 {
+  background: #7459c8;
+}
+
+.mobials-brand__color-container--teal {
+  background: #3bcbc8;
+}
+
+.mobials-brand__color-container--grey {
+  background: #eaeaf2;
+}
+
+.mobials-brand__color-container--charcoal {
+  background: #333333;
+}
+
+.mobials-brand__color-label {
+  font-weight: 300;
+  margin: 5px 0 0;
+  font-size: 10px;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: .7s ease;
+  text-transform: uppercase;
+}
+
+.mobials-section__label-container--colours {
+  padding-bottom: 50px;
+}
+
+.mobials-brand__font-container {
+  padding-top: 15vh;
+  @media only screen and (max-width: $screen-xs-max) {
+    padding: 0 0 75px;
+  }
+}
+
+.mobials-brand__font {
+  font-size: 42px;
+  margin-bottom: 25px;
+  margin: 0;
+  line-height: 1;
+}
+
+.mobials-brand__font-title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: -10px;
+}
+
+.mobials-brand__font--raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+.mobials-brand__font--nunito {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.mobials-brand__font--ptserif {
+  font-family: 'PT Serif', serif;
+}
+
+.mobials-brand__font-section {
+  padding-top: 50px;
+}
+
+.next-banner {
+  background: lighten(#1d1c21, 2%);
+  overflow: hidden;
+  transition: .5s ease;
+  position: relative;
+  &:hover {
+    background: lighten(#1d1c21, 1%);
+  }
+}
+
+.next-banner__bg-text {
+  color: #1d1c21;
+  font-size: 200px;
+  position: relative;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  line-height: .75;
+  z-index: 1;
+  margin-top: -20px;
+  padding: 25px 0;
+  @media only screen and (max-width: $screen-md-max) {
+    font-size: 150px;
+    padding: 25px 0 50px;
+  }
+  @media only screen and (max-width: $screen-sm-max) {
+    font-size: 100px;
+    padding: 25px 0 75px;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.next-banner__link {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.next-banner__content {
+  position:  absolute;
+  right: 50px;
+  top: 0;
+  z-index: 2;
+}
+
+.next-banner__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.next-banner__url {
+  position: relative;
+  z-index: 5;
+  margin-top: -150px;
+  text-align: center;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  text-shadow: 5px 1px 15px rgba(0, 0, 0, 0.75);
+  @media only screen and (max-width: $screen-md-max) {
+    font-size: 48px;
+  }
+  @media only screen and (max-width: $screen-sm-max) {
+    font-size: 32px;
+  }
+}
+
+.portfolio-work__title {
+  font-family: 'Playfair Display', serif;
+  line-height: 1;
+  color: $pink;
+  font-size: 44px;
+}
+
+.portfolio-work__description {
+  line-height: 2;
+}
+
+.portfolio-work__link {
+  font-family: 'Playfair Display', serif;
+  color: $orange;
+  letter-spacing: 1px;
+  &:hover {
+    color: lighten($orange, 10%);
+  }
+}
+
+.portfolio-work__skills {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 1px;
+  margin-bottom: -10px;
+}
+
+.mobials-screen--2 {
+  margin-top: -75px;
+}
+
+.portfolio-piece__description {
+  color: #666666;
+  line-height: 2;
+  font-size: 16px;
+}
+
+.mobials-screens {
+  background: $lightest-grey;
+  padding: 100px 0 50px;
+}
+
+.screens {
+  overflow: hidden;
+  position: relative;
+  height: 75vh;
+}
+
+.grid--loaded {
+  margin-left: -500px;
+}

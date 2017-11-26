@@ -1,7 +1,9 @@
 /*---------- Footer ----------*/
 footer {
   background: $almost-black;
-  @media only screen and (max-width : 767px) {
+  position: relative;
+  padding: 0 0 0 50px;
+  @media only screen and (max-width: $screen-sm-max) {
     text-align: center;
   }
   ul {
@@ -96,25 +98,10 @@ footer {
   }
 }
 
-.footer__instagram {
-  img {
-      width: 100%;
-      opacity: 1;
-      transition: 0.3s;
-      &:hover {
-        opacity: .7;
-      }
-  }
-}
-
 .footer-logo {
   max-width: 170px;
   display: block;
-  @media only screen and (max-width : 767px) {
+  @media only screen and (max-width: $screen-sm-max) {
     margin: 0 auto;
   }
-}
-
-.home-footer {
-  margin-top: 100px;
 }

@@ -1,153 +1,99 @@
-/*---------- About Section ----------*/
-.about__text {
-  background: white;
-  border-bottom: 1px solid $light-grey;
-  .title {
-    font-weight: 900;
-    font-size: 50px;
-    line-height: 1;
-    margin-top: 0;
-    @media only screen and (max-width: 950px) {
-      font-size: 38px;
-      margin-bottom: 25px;
-    }
-  }
-  p {
-    font-size: 16px;
-    font-weight: 300;
-    @media only screen and (max-width: 767px) {
-      font-size: 14px;
-    }
-  }
-}
-
-.about__portrait {
-  width: 275px;
-  display: block;
-  margin: 0 auto;
-}
-
-.about__text--title {
-  margin-left: 25px;
-  @media only screen and (max-width: 767px) {
-    margin-left: 0;
-  }
-}
-
-.blog {
-  min-height: 550px;
-}
-
-/*---------- Featured Work ----------*/
-
-.featured-work__title {
+.home__welcome {
   font-family: 'Playfair Display', serif;
-  position: absolute;
-  top: 30%;
-  left: 20%;
-  color: white;
-  font-size: 65px;
   text-align: center;
-  @media only screen and (max-width : 1199px) {
-    font-size: 55px
-  }
-  @media only screen and (max-width : 767px) {
-    font-size: 40px;
-    top: 25%;
-  }
-  @media only screen and (max-width : 480px) {
-    font-size: 28px;
-    top: 25%;
-    left: 30px;
-    text-align: left;
-  }
+  font-size: 70px;
+  color: lighten($yellow, 25%);
+  margin-top: 10vh;
 }
 
-.featured-work__title--identity {
-  left: 27%;
-  @media only screen and (max-width: 767px) {
-    left: 7%;
-  }
-}
-
-.featured-work__title--art {
-  left: 30%;
-  @media only screen and (max-width: 767px) {
-    left: 7%;
-  }
-}
-
-.featured-work__lead {
-  font-size: 18px;
-  font-weight: 500;
-  small {
-    font-size: 12px;
-  }
-}
-
-.featured-work__button {
-  font-weight: 800;
-  font-family: 'Open Sans';
-  color: $pink;
-  transition: 0.3s;
-  &:hover {
-    color: $orange;
-    text-decoration: none;
-  }
-}
-
-.featured-work__slider--count {
-  text-align: right;
+.about-link {
   position: absolute;
+  bottom: 40px;
+  left: 50px;
   color: white;
-  left: 35px;
-  bottom: 10px;
   font-family: 'Playfair Display', serif;
-  font-size: 16px;
+  font-size: 18px;
+  @media only screen and (max-width: $screen-xs-max) {
+    position: relative;
+    text-align: center;
+    left: 0;
+    bottom: 55px;
+  }
+}
+
+.about-me {
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  background: white;
+  z-index: 100;
+  width: 70%;
+  height: 100vh;
+  overflow: scroll;
+  transition: .2s ease-in-out;
+  opacity: .4;
+}
+
+.about__header {
+  font-family: Playfair Display;
+  font-weight: 900;
+  margin: 100px 0 50px;
+  font-size: 90px;
+  line-height: .9;
+  color: $almost-black;
+}
+
+.about__service {
+  font-size: 32px;
+  list-style-type: none;
+  margin-left: -40px;
+  font-family: Playfair Display;
   font-weight: 700;
-  @media only screen and (max-width : 767px) {
-    right: 25px;
+  color: #cccccc;
+}
+
+.about__service-content {
+  padding-bottom: 50px;
+}
+
+.active-about {
+  top: 0;
+  height: 100vh;
+  opacity: 1;
+}
+
+.about-me__logo-container {
+  height: 100px;
+  @media only screen and (max-width: $screen-xs-max) {
+    padding: 0 35px 15px;
   }
 }
 
 
-.featured-work__recent {
-  position: absolute;
-  left: 40%;
-  top: 28%;
+.about {
+  padding-top: 100vh;
 }
 
-.featured-work__slider--title {
-  position: absolute;
-  color: white;
-  bottom: 10px;
-  left: 30px;
+.about-content {
+  background: white;
+}
+
+.home-bg {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+}
+
+.about__whoami {
+  border-bottom: 1px solid $light-grey;
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 16px;
-  @media only screen and (max-width : 767px) {
-    font-size: 10px;
-    bottom: 0;
-  }
+  padding: 10px 0;
+  color: #666666;
+  letter-spacing: 1px;
 }
 
-.recent-work__item {
-  width: 94%;
-  @media only screen and (max-width : 767px) {
-    width: 100%;
-  }
-}
-
-/*---------- Resume Section ----------*/
-.resume {
-  background: black url('../images/resume-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.resume__title {
-  font-size: 50px;
-  color: white;
+.about__hashtag {
+  padding: 0 25px 0 0;
 }

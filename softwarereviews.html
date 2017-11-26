@@ -13,7 +13,6 @@
     <link href="dist/application.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Source+Sans+Pro:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Exo|Montserrat:300,500,900|Roboto:300" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -42,357 +41,174 @@
 </div>
 
 <section id="nav-content">
-  <div class="nav-white">
-    <div class="menu">
-      <div class="menu menu_minified">
-        <a href="#" id="nav-toggle2">
-          <span class="button button--hamburger">
-            <img src="images/close.png" alt="close icon">
-          </span>
-        </a>
-        <ul class="nav-content__links">
-          <li class="nav-content__item"><a href="index.html" class="nav-content__link">Home</a></li>
-          <li class="nav-content__item"><a href="index.html#portfolio" class="nav-content__link">Portfolio</a></li>
-          <li class="nav-content__item"><a href="gallery.html" class="nav-content__link">Visual Art</a></li>
-          <li class="nav-content__item"><a href="blog.html" class="nav-content__link">Blog</a></li>
-          <li class="nav-content__item"><a href="contact.html" class="nav-content__link">Contact</a></li>
-        </ul>
-        <div class="nav-content__credits text-center">
-          <div class="nav-content__social">
-            <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
-            <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
-            <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
-            <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
-          </div>
-          <p class="padding-tb-15">Made by yours truly.</p>
+  <div class="menu">
+    <div class="menu menu_minified">
+      <a href="#" id="nav-toggle2" class="menu__close">
+        <span></span>Close
+      </a>
+      <ul class="nav-content__links">
+        <li class="nav-content__item"><a href="index.html" class="nav-content__link">Home</a></li>
+        <li class="nav-content__item"><a href="portfolio.html" class="nav-content__link">Portfolio</a></li>
+        <li class="nav-content__item"><a href="gallery.html" class="nav-content__link">Visual Art</a></li>
+        <li class="nav-content__item"><a href="contact.html" class="nav-content__link">Contact</a></li>
+      </ul>
+      <div class="nav-content__credits text-center">
+        <div class="nav-content__social">
+          <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
+          <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
+          <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
+          <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
         </div>
+        <p class="padding-tb-15 white">Made by yours truly.</p>
       </div>
     </div>
   </div>
 </section>
 
-    <section class="animated fadeIn">
-      <div class="container-fluid no-padding header sr-hero">
-        <h1 class="hidden">Kristiana Vellucci Design</h1>
-        <div class="row">
-          <div class="col-md-12">
-            <a href="index.html"><img src="images/logo.png" alt="Logo" class="header__logo animated fadeInDown"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3 col-sm-offset-2 hidden-xs hidden-sm">
-            <img src="images/sr-mobile-01.png" alt="Software Reviews Preview" class="img-responsive sr-hero__phone">
-          </div>
-          <div class="col-xs-12 col-sm-4 text-center header-content white">
-            <h1 class="portfolio-piece__title">Software <br> Reviews</h1>
-            <p class="portfolio-piece__lead">Data driven reviews to make better decisions, faster.</p>
-            <p class="portfolio-piece__location">Portfolio / Mobile Survey App Design</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="about about__softwarereviews">
-      <div class="container-fluid no-padding">
-        <div class="about__text padding-tb-50">
+<div class="portfolio-body">
+  <section class="animated fadeIn">
+    <div class="container-fluid no-padding">
+      <h1 class="hidden">Kristiana Vellucci Design</h1>
+      <a href="illustrations.html" class="previous">Previous Case</a>
+      <a href="mobials.html" class="next">Next Case</a>
+      <a href="index.html"><img src="images/temp-logo-white.png" alt="Logo" class="header__logo animated fadeInDown"></a>
+      <section class="portfolio-header portfolio-header--sr">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-8">
-              <div class="cointainer">
-                <div class="col-sm-11 col-sm-offset-1">
-                  <p class="portfolio-lead">An app inspired by Tinder.</p>
-                  <p>In 2016 SoftwareReviews decided to take a mobile friendly approach to their pre-existing web based content. This transformation started with a redesign of their desktop survey: a lengthy web interface used to collect the very data behind their product. The given direction was to draw inspiration from Tinder's UX and mimic the app's swipe left/right functionality to provide users with a series of straight forward, digestible questions in an engaging interactive application.
-
-<br><br> From a design perspective, the goal was to create a clean, intuitive user interface that would balance the brand’s bold visual identity while keeping the survey visually interesting.
-</p>
-                </div>
-              </div>
+            <div class="hidden-xs col-sm-offset-1 col-sm-5">
+              <img src="images/sr-preview.png" alt="Mobials Main Screen" class="img-responsive portfolio-header__img--sr">
             </div>
-            <div class="col-sm-3 about-facts text-">
-              <h3 class="about-facts__title">Client:</h3>
-              <p>Software Reviews</p>
-              <h3 class="about-facts__title">Live Link:</h3>
-              <a href="http://www.softwarereviews.com" class="about-facts__link almost-black font-300" target="new">www.softwarereviews.com</a>
-              <h3 class="about-facts__title">Skillset:</h3>
-              <p>Branding, Web Design, Application Design, Front-End Development, UX &amp; UI</p>
-              <h3 class="about-facts__title">Partners In Crime:</h3>
-              <p>Alex Smith (designer)</p>
+            <div class="col-sm-5 text-center">
+              <p class="portfolio-intro__skill">Branding, UI Design, Front-End</p>
+              <h1 class="portfolio-intro__title">SoftwareReviews <br>Mobile Survey</h1>
+              <a class="portfolio-intro__link">Project with Infotech Research Group</a>
+              <img src="images/sr-preview.png" alt="SoftwareReviews Main Screen" class="img-responsive visible-xs padding-tb-25">
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="typography padding-tb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <h2 class="title almost-black padding-tb-15">Typography</h2>
-            <div class="col-sm-4 type__montserrat text-center">
-              <span class="type__intro font-800">Aa</span>
-              <h3 class="type__font">Montserrat</h3>
-              <p class="type__sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p class="type__sample">abcdefghijklmnopqrstuvwxyz</p>
-              <p class="type__sample">!@#$%^&amp;*-_=+;:’”,.?<>/\|{}[]()</p>
-            </div>
-            <div class="col-sm-4 type__roboto text-center">
-              <span class="type__intro type__intro--roboto">Aa</span>
-              <h3 class="type__font">Roboto</h3>
-              <p class="type__sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p class="type__sample">abcdefghijklmnopqrstuvwxyz</p>
-              <p class="type__sample">!@#$%^&amp;*-_=+;:’”,.?<>/\|{}[]()</p>
-            </div>
-            <div class="col-sm-4 type__exo text-center">
-              <span class="type__intro type__intro--exo">Aa</span>
-              <h3 class="type__font">Exo</h3>
-              <p class="type__sample">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-              <p class="type__sample">abcdefghijklmnopqrstuvwxyz</p>
-              <p class="type__sample">!@#$%^&amp;*-_=+;:’”,.?<>/\|{}[]()</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="colors padding-tb-50">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-10 col-sm-offset-1">
-            <h2 class="title almost-black padding-tb-15">Colour Scheme</h2>
-          </div>
-        </div>
-        <div class="row white">
-          <div class="col-sm-10 col-sm-offset-1">
-            <div class="col-md-2 col-sm-4 col-xs-6">
-              <div class="colors__circle colors__box--green padding-50 img-circle">
-                <p><strong>Brand Primary</strong> <br> <span class="colors__accent">147 186 63 <br> #93ba3f</span></p>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-              <div class="colors__circle colors__box--purple padding-50 img-circle">
-                <p><strong>Brand Secondary</strong> <br> <span class="colors__accent">133 84 165 <br> #855495</span></p>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-              <div class="colors__circle colors__box--green2 padding-50 img-circle">
-                <p><strong>Success</strong> <br> <span class="colors__accent">117 149 6 <br> #759530</span></p>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-              <div class="colors__circle colors__box--yellow padding-50 img-circle">
-                <p><strong>Warning</strong><br><span class="colors__accent">249 220 2 <br> #f9dc02</span></p>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-              <div class="colors__circle colors__box--red padding-50 img-circle">
-                <p><strong>Danger</strong><br><span class="colors__accent">235 0 0 <br> #eb0000</span></p>
-              </div>
-            </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
-              <div class="colors__circle colors__box--green3 padding-50 img-circle">
-                <p><strong>Almost</strong><br><span class="colors__accent">191 216 140 <br> #bfd88c</span></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="desktop-survey padding-tb-100 hidden-xs">
-      <div class="container">
-        <div class="col-sm-3 col-sm-offset-1">
-          <h2>Desktop <br> Survey</h2>
-          <p>The original desktop survey consisted of over 100 questions divided into 7 sections for users to answer when creating a product review. After identifying the length and density as a pain point for users, the mobile redesign focused on brevity to create a less overwhelming product.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio-carousel portfolio-carousel__sr padding-tb-50 visible-xs">
-      <div class="container">
-        <div class="row">
-          <div id="mobile-Carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="col-sm-10 col-sm-offset-1">
-              <div class="container">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-12">
-                          <img src="images/sr-mobile-01.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-12">
-                          <img src="images/sr-mobile-02.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-12">
-                          <img src="images/sr-mobile-03.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-12">
-                          <img src="images/sr-mobile-04.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-12">
-                          <img src="images/sr-mobile-05.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-12">
-                          <img src="images/sr-mobile-06.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#mobile-Carousel" role="button" data-slide="prev">
-                    <span aria-hidden="true"><<<</span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control pull-right" href="#mobile-Carousel" role="button" data-slide="next">
-                    <span aria-hidden="true">>>></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="portfolio-carousel portfolio-carousel__sr padding-tb-50 hidden-xs">
-      <div class="container">
-        <div class="row">
-          <div id="desktop-Carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="col-sm-10 col-sm-offset-1">
-              <div class="container">
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                  <div class="item active">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-xs-4">
-                          <img src="images/sr-mobile-01.png" alt="Chania" class="img-responsive">
-                        </div>
-                        <div class="col-xs-4">
-                          <img src="images/sr-mobile-02.png" alt="Chania" class="img-responsive">
-                        </div>
-                        <div class="col-xs-4">
-                          <img src="images/sr-mobile-03.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item">
-                    <div class="row">
-                      <div class="col-sm-10 col-sm-offset-1">
-                        <div class="col-sm-4">
-                          <img src="images/sr-mobile-04.png" alt="Chania" class="img-responsive">
-                        </div>
-                        <div class="col-sm-4">
-                          <img src="images/sr-mobile-05.png" alt="Chania" class="img-responsive">
-                        </div>
-                        <div class="col-sm-4">
-                          <img src="images/sr-mobile-06.png" alt="Chania" class="img-responsive">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <a class="left carousel-control" href="#desktop-Carousel" role="button" data-slide="prev">
-                    <span aria-hidden="true"><<<</span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control pull-right" href="#desktop-Carousel" role="button" data-slide="next">
-                    <span aria-hidden="true">>>></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <section class="portfolio-nav">
-      <div class="container-fluid">
-        <div class="row">
-          <a href="mobials.html">
-            <div class="col-sm-6 text-left padding-30 portfolio__nav portfolio-nav__previous portfolio-nav__previous--sr">
-              <p>Previous</p>
-              <h3>Mobials Inc. Rebrand</h3>
-            </div>
-          </a>
-          <a href="illustrations.html">
-            <div class="col-sm-6 text-right padding-30 portfolio__nav portfolio-nav__next portfolio-nav__next--sr">
-              <p>Next</p>
-              <h3>Identity Sketches</h3>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-
-    <footer>
-      <div class="container-fluid no-padding">
-        <div class="col-sm-3 padding-50">
-          <img src="images/logo.png" alt="Logo" class="footer-logo">
-          <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
-          <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
-          <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
-          <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
-          <br><br><br>
-          <p class="white padding-tb-15">Made by yours truly.</p>
-        </div>
-        <div class="hidden-xs col-sm-5 padding-tb-50">
+      </section>
+      <section class="portfolio-info text-center">
+        <div class="container">
           <div class="row">
-            <div class="hidden-sm col-md-6">
-              <h2 class="footer__title no-margin">Recent Projects</h2>
-              <br><br>
-              <a href="mobials.html" class="white font-300 footer__link">Mobials Inc. Rebrand</a><br>
-              <a href="softwarereviews.html" class="white font-300 footer__link">SoftwareReviews Mobile Survey</a><br>
-              <a href="gallery.html" class="white font-300 footer__link">Visual Art Gallery</a>
-            </div>
-            <div class="col-sm-11 col-sm-offset-1 col-md-offset-0 col-md-5">
-              <h2 class="footer__title no-margin">Oh, P.S.</h2>
-              <br><br>
-              <p class="white">© 2017 All rights reserved Kristiana Vellucci. <br><br> Brands mentioned above are property of their respective owner.</p>
+            <div class="col-sm-offset-2 col-sm-8">
+              <p class="portfolio--info__text">In 2016 SoftwareReviews decided to take a mobile friendly approach to their pre-existing web based content. This transformation started with a redesign of their desktop survey: a lengthy web interface used to collect the very data behind their product. The given direction was to draw inspiration from Tinder's UX and mimic the app's swipe left/right functionality to provide users with a series of straight forward, digestible questions in an engaging interactive application.</p>
             </div>
           </div>
         </div>
-        <div class="col-sm-4 footer__branding hidden-xs">
-          <a href="contact.html" class="title white">Work with Me <span class="fa fa-arrow-circle-right footer__arrow"></span></a>
+      </section>
+
+  <section>
+    <div class="container padding-tb-50">
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+          <div class="hidden-xs col-sm-4">
+            <img src="images/sr-mobile-02.png" alt="Mobials Screen" class="img-responsive">
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <img src="images/sr-mobile-03.gif" alt="Mobials Screen" class="img-responsive">
+          </div>
+          <div class="col-xs-6 col-sm-4">
+            <img src="images/sr-mobile-04.png" alt="Mobials Screen" class="img-responsive">
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
+
+  <section class="desktop-survey padding-tb-100 hidden-xs">
+    <div class="container">
+      <div class="col-sm-3 col-sm-offset-1">
+        <h2>Desktop <br> Survey</h2>
+        <p>The original desktop survey consisted of over 100 questions divided into 7 sections for users to answer when creating a product review. After identifying the length and density as a pain point for users, the mobile redesign focused on brevity to create a less overwhelming product.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="padding-tb-50">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-6">
+          <h2 class="portfolio-small-title">Finding A Slider Alternative</h2>
+          <p>One of our major obstacles in the design of this app came with the swipe functionality that inspired this build in the first place. On swipe, our survey would change to the next question. However, this became problematic on all questions with sliders in their UI. Sliding the tool tip acted like a page swipe and, instead of registering the user’s answer to the current question, would bring users to the next question instead.
+<br><br>
+I started thinking of other ways to visualize a range without forcing the user to move horizontally from left to right. The solution? A clean, modern twist on the stereo volume dial. </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-bottom-screens">
+    <div class="container">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <img src="images/sr-dial-screens.png" alt="Mobials Screen" class="img-responsive">
+          </div>
+        </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-9">
+          <h2 class="sr-colours__title">The Colour Scale:</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-offset-3 col-sm-9 text-center">
+          <div class="sr-colour sr-colour-green-1">#90BC38</div>
+          <div class="sr-colour sr-colour-green-2">#A0B72D</div>
+          <div class="sr-colour sr-colour-yellow">#B4A222</div>
+          <div class="sr-colour sr-colour-orange">#E07124</div>
+          <div class="sr-colour sr-colour-red">#EB3B2A</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sr-bottom-screens">
+    <div class="container-fluid">
+      <div class="col-xs-12">
+        <img src="images/sr-screens-all.jpg" alt="Mobials Screen" class="img-responsive">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container-fluid no-padding">
+      <div class="col-md-3 footer__brand-links padding-tb-50">
+        <img src="images/logo.png" alt="Logo" class="footer-logo">
+        <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
+        <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
+        <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
+        <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
+        <p class="white padding-tb-15">Made by yours truly.</p>
+      </div>
+      <div class="hidden-xs hidden-sm col-md-5 padding-tb-50">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="footer__title no-margin">Recent Projects</h2>
+            <br><br>
+            <a href="mobials.html" class="white font-300 footer__link">Mobials Inc. Rebrand</a><br>
+            <a href="softwarereviews.html" class="white font-300 footer__link">SoftwareReviews Mobile Survey</a><br>
+            <a href="gallery.html" class="white font-300 footer__link">Visual Art Gallery</a>
+          </div>
+          <div class="col-sm-6">
+            <h2 class="footer__title no-margin">Oh, P.S.</h2>
+            <br><br>
+            <p class="white">© 2017 All rights reserved. <br><br> Brands mentioned above are property <br> of their respective owner.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden-xs hidden-sm col-md-4 footer__branding">
+        <a href="contact.html" class="title white">Work with Me <span class="fa fa-arrow-circle-right footer__arrow"></span></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -400,11 +216,12 @@
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.4/waypoints.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/dynamics.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript">
-
-          // Activate Carousel
-          $("#desktop-Carousel").carousel();
-          $("#mobile-Carousel").carousel();
 
           $("#nav-toggle").click(function(){
               $("#nav-content").addClass("active-menu");
@@ -422,11 +239,6 @@
               $(".nav-content__links").removeClass("active-items");
           });
 
-          $('.self__portrait').waypoint(function() {
-             $(".about").removeClass("animated fadeIn");
-          });
-
-      });
     </script>
   </body>
 </html>

@@ -4,6 +4,7 @@
 @import
 'base/variables',
 'base/mixins',
+'base/media-queries',
 'base/helpers',
 'base/overwrites',
 'base/global';
@@ -24,4 +25,8 @@
 @import
 'pages/404',
 'pages/home',
-'pages/portfolio';
+'pages/illustrations',
+'pages/gallery',
+'pages/mobials',
+'pages/portfolio',
+'pages/software-reviews';

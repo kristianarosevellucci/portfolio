@@ -1,16 +1,12 @@
-body {
-    overflow-x: hidden;
-}
-
 .header {
   height: 100vh;
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: $screen-xs-max) {
     height: auto;
   }
 }
 
 .header-content {
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: $screen-xs-max) {
     padding: 75px 0 150px;
   }
 }
@@ -76,7 +72,7 @@ body {
   background-attachment: fixed;
   @media only screen and (max-width: 766px) {
     background: black url('../images/hero.jpg') no-repeat center center;
-    height: 400px;
+    height: 100vh;
   }
   @media only screen and (max-width: 600px) {
     background: black url('../images/hero-mob.jpg') no-repeat center center;
@@ -84,7 +80,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 500px;
   }
 }
 
@@ -121,136 +116,7 @@ body {
   height: 100vh;
 }
 
-.sr-hero {
-  background: black url('../images/sr-hero-color.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
 
-.flow-hero {
-  background: black url('../images/flow-hero.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.identity-hero {
-  background: black url('../images/identity-hero.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.reviewsii-hero {
-  background: black url('../images/reviewsii-hero-v2.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.mobials-hero {
-  background: black url('../images/duck-fam-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-header {
-  height: 500px;
-  margin-top: 35px;
-  @media only screen and (max-width: 767px) {
-    height: auto;
-  }
-}
-
-.blog-donald {
-  background: black url('../images/blog/donald-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-woods {
-  background: black url('../images/blog/woods-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-glass {
-  background: black url('../images/blog/glass-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-new {
-  background: black url('../images/blog/new-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-bridging {
-  background: black url('../images/blog/bridging-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-boy {
-  background: black url('../images/blog/boy-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-denzler {
-  background: black url('../images/blog/denzler-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-2016design {
-  background: black url('../images/blog/design-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.blog-post__lead {
-  font-family: 'Playfair Display', serif;
-  font-size: 25px;
-  line-height: 1.2;
-}
 
 .header-greeting {
   font-size: 60px;
@@ -286,18 +152,6 @@ body {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 *, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
 .clearfix::before, .clearfix::after {display: table;  content: ''; }
 .clearfix::after { clear: both; }
@@ -310,7 +164,6 @@ body {
 	height: 100vh;
 	min-height: 800px;
 	max-height: 1200px;
-	padding: 7vmax;
 }
 
 .section--right {

@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/helpers.css" rel="stylesheet">
     <link href="dist/application.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Source+Sans+Pro:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
@@ -30,7 +31,7 @@
   <body>
 
   <section class="menu menu_minified">
-    <a href="#" id="nav-toggle" class="animated fadeIn">
+    <a href="#" id="nav-toggle" class="animated slideInRight">
       <span class="button button--hamburger">
         <i></i>
         <i></i>
@@ -40,42 +41,120 @@
   </section>
 
   <section id="nav-content">
-    <div class="nav-white">
-      <div class="menu">
-        <div class="menu menu_minified">
-          <a href="#" id="nav-toggle2">
-            <span class="button button--hamburger">
-              <img src="images/close.png" alt="close icon">
-            </span>
-          </a>
-          <ul class="nav-content__links">
-            <li class="nav-content__item"><a href="index.html" class="nav-content__link">Home</a></li>
-            <li class="nav-content__item"><a href="index.html#portfolio" class="nav-content__link">Portfolio</a></li>
-            <li class="nav-content__item"><a href="gallery.html" class="nav-content__link">Visual Art</a></li>
-            <li class="nav-content__item"><a href="blog.html" class="nav-content__link">Blog</a></li>
-            <li class="nav-content__item"><a href="contact.html" class="nav-content__link">Contact</a></li>
-          </ul>
-          <div class="nav-content__credits text-center">
-            <div class="nav-content__social">
-              <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
-              <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
-              <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
-              <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
-            </div>
-            <p class="padding-tb-15">Made by yours truly.</p>
+    <div class="menu">
+      <div class="menu menu_minified">
+        <a href="#" id="nav-toggle2" class="menu__close">
+          <span></span>Close
+        </a>
+        <ul class="nav-content__links">
+          <li class="nav-content__item"><a href="index.html" class="nav-content__link">Home</a></li>
+          <li class="nav-content__item"><a href="portfolio.html" class="nav-content__link">Portfolio</a></li>
+          <li class="nav-content__item"><a href="gallery.html" class="nav-content__link">Visual Art</a></li>
+          <li class="nav-content__item"><a href="contact.html" class="nav-content__link">Contact</a></li>
+        </ul>
+        <div class="nav-content__credits text-center">
+          <div class="nav-content__social">
+            <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
+            <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
+            <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
+            <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
+          </div>
+          <p class="padding-tb-15 white">Made by yours truly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-bg">
+    <div class="container-fluid header home-hero">
+      <h1 class="hidden">Kristiana Vellucci Design</h1>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="scene">
+            <a href="index.html"><img src="images/temp-logo-black.png" alt="Logo" class="header__logo animated slideInLeft"></a>
+            <h1 class="visible-xs home__welcome">Welcome!</h1>
+            <div class="layer header-letter__w hidden-xs" data-depth=".10"><img src="images/w.png" class="header-letter"></div>
+            <div class="layer header-letter__e hidden-xs" data-depth="0.40"><img src="images/e.png" alt="Logo" class="header-letter"></div>
+            <div class="layer header-letter__l hidden-xs" data-depth="0.20"><img src="images/l.png" alt="Logo" class="header-letter"></div>
+            <div class="layer header-letter__c hidden-xs" data-depth="1.00"><img src="images/c.png" alt="Logo" class="header-letter"></div>
+            <div class="layer header-letter__o hidden-xs" data-depth="0.40"><img src="images/o.png" alt="Logo" class="header-letter"></div>
+            <div class="layer header-letter__m hidden-xs" data-depth="0.10"><img src="images/m.png" alt="Logo" class="header-letter"></div>
+            <div class="layer header-letter__e2 hidden-xs" data-depth="1.00"><img src="images/e.png" alt="Logo" class="header-letter"></div>
+            <div class="layer header-services hidden-xs" data-depth="0.60"><img src="images/header-services.png" alt="Logo" class="header-letter__services"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="about-link animated slideInLeft" id="about-toggle">Scroll Down to Learn More <span class="fa fa-angle-double-down animated infinite wobble"></span></p>
+  </section>
+
+  <section class="about">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-9 about-content">
+          <div class="col-sm-offset-1 col-sm-10">
+            <h2 class="about__header">Oh, <br> Hey There!</h2>
+          </div>
+          <div class="col-sm-offset-1 col-sm-5">
+            <h2 class="portfolio-small-title">My Services:</h2>
+            <ul class="about__service-content">
+              <li class="about__service">Interactive Design</li>
+              <li class="about__service">Brand Development</li>
+              <li class="about__service">Illustration</li>
+              <li class="about__service">Logo Design</li>
+              <li class="about__service">Content Planning</li>
+            </ul>
+          </div>
+          <div class="col-sm-5">
+            <h2 class="portfolio-small-title">About Me:</h2>
+            <p>I’m Kristiana, an Interactive Designer and Front-End Developer with a background in media and cultural studies. I’m currently trotting the globe while working for Mobials Inc., a small company based in London, Ontario.
+<br><br>
+  In addition to design and travel, I have a passion for visual art and an incessant love for varying shades of yellow.
+
+  I’m inspired by Miranda July, enlightened by Barbara Kruger, and forever captivated by all things high contrast.<br><br><br></p>
+  <h2 class="portfolio-small-title">#WhoAmI:</h2>
+  <p class="about__whoami"><span class="about__hashtag">#</span> Daughter/Sister</p>
+  <p class="about__whoami"><span class="about__hashtag">#</span> Designer</p>
+  <p class="about__whoami"><span class="about__hashtag">#</span> Painter</p>
+  <p class="about__whoami"><span class="about__hashtag">#</span> Animal Lover</p>
+  <p class="about__whoami"><span class="about__hashtag">#</span> DIYer</p>
+  <p class="about__whoami"><span class="about__hashtag">#</span> Globe Trotter</p><br><br><br>
+  <h2 class="portfolio-small-title">Some of My Clients:</h2>
+  <div class="row">
+    <div class="col-xs-6 col-sm-4 about-me__logo-container">
+      <img src="images/devldn-logo.png" alt="Devldn" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-sm-4 about-me__logo-container">
+      <img src="images/ivey-logo.png" alt="Devldn" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-sm-4 about-me__logo-container">
+      <img src="images/oakview-logo.png" alt="Devldn" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-sm-4 about-me__logo-container">
+      <img src="images/prana-logo.png" alt="Devldn" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-sm-4 about-me__logo-container">
+      <img src="images/kitco-logo.png" alt="Devldn" class="img-responsive">
+    </div>
+    <div class="col-xs-6 col-sm-4 about-me__logo-container">
+      <img src="images/moss-logo.png" alt="Devldn" class="img-responsive">
+    </div>
+  </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-    <section class="animated fadeIn">
+
+
+    <section class="animated fadeIn hidden">
       <div class="container-fluid header home-hero">
         <h1 class="hidden">Kristiana Vellucci Design</h1>
         <div class="row">
           <div class="col-md-12">
             <div id="scene">
-              <a href="index.html"><img src="images/logo.png" alt="Logo" class="header__logo animated fadeInDown"></a>
+              <a href="index.html"><img src="images/signature.png" alt="Logo" class="header__logo animated slideInLeft"></a>
               <div class="layer header-letter__w hidden-xs" data-depth=".10"><img src="images/w.png" class="header-letter"></div>
               <div class="layer header-letter__e hidden-xs" data-depth="0.40"><img src="images/e.png" alt="Logo" class="header-letter"></div>
               <div class="layer header-letter__l hidden-xs" data-depth="0.20"><img src="images/l.png" alt="Logo" class="header-letter"></div>
@@ -88,480 +167,11 @@
           </div>
         </div>
       </div>
+      <a href="#" class="about-link animated slideInLeft" id="about-toggle">About</a>
     </section>
-
-    <section class="about padding-tb-50" id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-8 about__text padding-tb-50">
-            <div class="cointainer">
-              <div class="col-sm-5">
-                <h2 class="about__text--title title almost-black">Fancy <br class="hidden-xs"> Meeting <br class="hidden-xs"> You Here</h2>
-              </div>
-              <div class="col-sm-7">
-                <p>I’m Kristiana, an Interactive Designer and Front-End Developer with a background in media and cultural studies. I’m currently trotting the globe while working for Mobiles Inc., a small company based in London, Ontario.</p>
-                <p>In addition to design and travel, I have a passion for visual art and an incessant love for varying shades of yellow.</p>
-                <p>I’m inspired by Miranda July, enlightened by Barbara Kruger, and forever captivated by all things high contrast.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <img src="images/portrait-self.png" alt="self portrait" class="about__portrait hidden-xs">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="services hidden">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="services__title title">Services</h2>
-            <p class="services__subtitle">What I Can Do</p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 hidden-sm hidden-xs services__category">
-            <span class="fa fa-bullseye services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Branding</h3>
-            <ul>
-              <li>Brand Identity</li>
-              <li>Style Guide</li>
-              <li>Corporate Identity</li>
-              <li>Logo Design</li>
-              <li>Social Media Marketing</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-6 services__category visible-sm visible-xs">
-            <span class="fa fa-bullseye services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Branding</h3>
-            <p>Brand Identity, Style Guide, Corporate Identity, Logo Design, Social Media Marketing</p>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs services__category">
-            <span class="fa fa-image services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Graphic</h3>
-            <ul>
-              <li>Print and Editorial</li>
-              <li>Web and Interactive</li>
-              <li>Mobile Applications</li>
-              <li>Packaging</li>
-              <li>Infographics</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-6 services__category visible-sm visible-xs">
-            <span class="fa fa-image services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Graphic</h3>
-            <p>Print and Editorial, Web and Interactive, Mobile Applications, Packaging, Infographics</p>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs services__category">
-            <span class="fa fa-paper-plane services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Interactive</h3>
-            <ul>
-              <li>UX/UI Design</li>
-              <li>CMS</li>
-              <li>HTML5</li>
-              <li>CSS/SCSS/LESS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-6 services__category visible-sm visible-xs">
-            <span class="fa fa-plane services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Interactive</h3>
-            <p>UX/UI Design, CMS, HTML5, CSS/SCSS/LESS, Javascript</p>
-          </div>
-          <div class="col-md-3 hidden-sm hidden-xs services__category">
-            <span class="fa fa-paint-brush services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Creative</h3>
-            <ul>
-              <li>Illustration</li>
-              <li>Digital Painting</li>
-              <li>Oil Painting</li>
-              <li>Mixed Media</li>
-              <li>Art Prints</li>
-            </ul>
-          </div>
-          <div class="col-xs-12 col-sm-6 services__category visible-sm visible-xs">
-            <span class="fa fa-paint-brush services__category--icon" aria-hidden="true"></span>
-            <h3 class="services__category--title">Creative</h3>
-            <p>Illustration, Digital Painting, Oil Painting, Mixed Media, Art Prints</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="featured-work padding-bottom-100" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div id="myCarousel" class="carousel slide carousel-fade hidden-xs" data-ride="carousel">
-              <div class="row">
-                <div class="col-xs-12 col-sm-11">
-                  <!-- Wrapper for slides -->
-                  <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                      <div class="row">
-                        <a href="softwarereviews.html">
-                        <div class="col-sm-12 col-md-9">
-                          <p class="featured-work__slider--count">1/6</p>
-                          <p class="subtitle white featured-work__recent">Recent Projects</p>
-                          <h2 class="featured-work__title">SoftwareReviews <br> Mobile Survey</h2>
-                          <img src="images/softwarereviews-preview-v2.jpg" alt="Software Reviews" class="recent-work__item">
-                        </div>
-                        </a>
-                        <div class="hidden-xs hidden-sm col-md-3">
-                          <p class="subtitle">About This Project:</p>
-                          <p class="padding-tb-15">In 2016 SoftwareReviews decided to take a mobile friendly approach to their pre-existing web content. This transformation started with a redesign of their desktop survey, a lengthy web interface used to collect the data behind the SoftwareReviews product.</p>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Role</p>
-                            <p>Designer</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Company</p>
-                            <p>Infotech Research Group</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Year</p>
-                            <p>2016</p>
-                          </div>
-                          <a href="softwarereviews.html" class="btn btn-info">View Case Study</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="row">
-                        <a href="illustrations.html">
-                        <div class="col-sm-12 col-md-9">
-                          <p class="featured-work__slider--count">2/6</p>
-                          <p class="subtitle white featured-work__recent">Recent Projects</p>
-                          <h2 class="featured-work__title featured-work__title--identity">Identity <br> Illustrations</h2>
-                          <img src="images/identity-preview-v2.jpg" alt="Software Reviews" class="recent-work__item">
-                        </div>
-                        </a>
-                        <div class="hidden-xs hidden-sm col-md-3">
-                          <p class="subtitle">About This Project:</p>
-                          <p class="padding-tb-15">Inspired by scribble artist Vince Low, these portraits are an attempt to capture basic human emotions and the profiles of the people on which these emotions appear using one of the simplest, basic elements on art: the line.</p>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Role</p>
-                            <p>Illustrator</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Company</p>
-                            <p>Personal</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Year</p>
-                            <p>2016</p>
-                          </div>
-                          <a href="illustrations.html" class="btn btn-info">View Case Study</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="row">
-                        <a href="tempo.html">
-                        <div class="col-sm-12 col-md-9">
-                          <p class="featured-work__slider--count">3/6</p>
-                          <p class="subtitle white featured-work__recent">Recent Projects</p>
-                          <h2 class="featured-work__title">Tempo <br> Magazine Spread</h2>
-                          <img src="images/dallas-preview-v2.jpg" alt="Software Reviews" class="recent-work__item">
-                        </div>
-                        </a>
-                        <div class="hidden-xs hidden-sm col-md-3">
-                          <p class="subtitle">About This Project</p>
-                          <p class="padding-tb-15">My inspiration for this project initially came from the SPD’s Annual Student Design Competition and later continued on as a personal project. This international competition allows each contestant to design a spread for a magazine in one of five categories: art and entertainment, news, how-to, fashion, and sports. The following spread was inspired by the entertainment magazine category.</p>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Role</p>
-                            <p>Designer</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Company</p>
-                            <p>Personal</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Year</p>
-                            <p>2015</p>
-                          </div>
-                          <a href="tempo.html" class="btn btn-info">View Case Study</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="row">
-                        <a href="reviewsii.html">
-                        <div class="col-sm-12 col-md-9">
-                          <p class="featured-work__slider--count">4/6</p>
-                          <p class="subtitle white featured-work__recent">Recent Projects</p>
-                          <h2 class="featured-work__title">Reviewsii Meets <br> Kijiji</h2>
-                          <img src="images/reviewsii-preview.jpg" alt="Software Reviews" class="recent-work__item">
-                        </div>
-                        </a>
-                        <div class="hidden-xs hidden-sm col-md-3">
-                          <p class="subtitle">About This Project</p>
-                          <p class="padding-tb-15">At the tail end of 2016, Mobials Inc announced it’s partnership with Kijiji. This partnership would allow for Mobials’ main product and review platform, Reviewsii, to be promoted and sold to Kijiji’s centralized network of digital communities. This campaign focused largely around the notion that the value consumers would receive through the Mobials/Kijiji partnership was so good it could only be described as magic.</p>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Role</p>
-                            <p>Designer, Front-End</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Company</p>
-                            <p>Mobials Inc.</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Year</p>
-                            <p>2016-2017</p>
-                          </div>
-                          <a href="reviewsii.html" class="btn btn-info">View Case Study</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="row">
-                        <a href="mobials.html">
-                        <div class="col-sm-12 col-md-9">
-                          <p class="featured-work__slider--count">5/6</p>
-                          <p class="subtitle white featured-work__recent">Recent Projects</p>
-                          <h2 class="featured-work__title featured-work__title--art">Mobials Inc. <br> Gets a Facelift</h2>
-                          <img src="images/mobials-preview.jpg" alt="Software Reviews" class="recent-work__item">
-                        </div>
-                        </a>
-                        <div class="hidden-xs hidden-sm col-md-3">
-                          <p class="subtitle">About This Project</p>
-                          <p class="padding-tb-15">Mobials Inc. is a software development company focused on bringing value to B2C companies and their customers - solving real world problems using the most cutting edge technologies. In 2016 Mobials Inc. evolved significantly as a company. They started the year with one application available for customer use and later saw this figure increase drastically with four products slated to be in the hands of customers by the end of 2017.</p>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Role</p>
-                            <p>Designer, Front-End, Project Management</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Company</p>
-                            <p>Mobials Inc.</p>
-                          </div>
-                          <div class="padding-tb-5">
-                            <p class="subtitle">Year</p>
-                            <p>2017</p>
-                          </div>
-                          <a href="mobials.html" class="btn btn-info">View Case Study</a>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="item">
-                      <div class="row">
-                        <a href="gallery.html">
-                        <div class="col-sm-12 col-md-9">
-                          <p class="featured-work__slider--count">6/6</p>
-                          <p class="subtitle white featured-work__recent">Recent Projects</p>
-                          <h2 class="featured-work__title featured-work__title--art">Visual Art <br> Gallery</h2>
-                          <img src="images/gallery-preview.jpg" alt="Software Reviews" class="recent-work__item">
-                        </div>
-                        </a>
-                        <div class="hidden-xs hidden-sm col-md-3">
-                          <p class="featured-work__lead">I guess my favourite thing in the world is when I look at a piece of art, or read a story, or watch a movie where I walk away feeling like "Oh my god - I have to do something, I have to make something or talk to someone - things are not the same anymore"<br><small>(Miranda July)</small></p>
-                          <p class="padding-tb-15">A collection of art works from over the years. Some made in an hour, some made in a year.</p>
-                          <a href="gallery.html" class="btn btn-info">View Gallery</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Left and right controls -->
-                  <div class="hidden-xs hidden-sm">
-                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                      <span aria-hidden="true"><<<</span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                      <span aria-hidden="true">>>></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                  </div>
-
-                </div>
-                <div class="hidden-xs col-sm-1 no-padding carousel-buttons">
-                  <div class="carousel-indicators">
-                    <div data-target="#myCarousel" data-slide-to="0" class="active carousel-indicators__square"></div>
-                    <div data-target="#myCarousel" data-slide-to="1" class="carousel-indicators__square"></div>
-                    <div data-target="#myCarousel" data-slide-to="2" class="carousel-indicators__square"></div>
-                    <div data-target="#myCarousel" data-slide-to="3" class="carousel-indicators__square"></div>
-                    <div data-target="#myCarousel" data-slide-to="4" class="carousel-indicators__square"></div>
-                    <div data-target="#myCarousel" data-slide-to="5" class="carousel-indicators__square"></div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-            <div class="visible-xs">
-              <div class="row">
-                <a href="softwarereviews.html">
-                <div class="col-sm-12 col-md-9">
-                  <h2 class="featured-work__title">SoftwareReviews <br> Mobile Survey</h2>
-                  <img src="images/softwarereviews-preview-v2.jpg" alt="Software Reviews" class="recent-work__item">
-                  <p class="featured-work__slider--title">Recent Projects</p>
-                </div>
-                </a>
-                <br>
-                <a href="illustrations.html">
-                <div class="col-sm-12 col-md-9">
-                  <h2 class="featured-work__title featured-work__title--identity">Identity <br> Illustrations</h2>
-                  <img src="images/identity-preview-v2.jpg" alt="Identity Sketches" class="recent-work__item">
-                  <p class="featured-work__slider--title">Recent Projects</p>
-                </div>
-                </a>
-                <br>
-                <a href="tempo.html">
-                <div class="col-sm-12 col-md-9">
-                  <h2 class="featured-work__title">Tempo <br> Magazine Spread</h2>
-                  <img src="images/dallas-preview-v2.jpg" alt="Tempo Magazine Spread" class="recent-work__item">
-                  <p class="featured-work__slider--title">Recent Projects</p>
-                </div>
-                </a>
-                <br>
-                <a href="reviewsii.html">
-                <div class="col-sm-12 col-md-9">
-                  <h2 class="featured-work__title">Reviewsii Meets <br> Kijiji</h2>
-                  <img src="images/reviewsii-preview.jpg" alt="Reviewsii Meets Kijiji" class="recent-work__item">
-                  <p class="featured-work__slider--title">Recent Projects</p>
-                </div>
-                </a>
-                <br>
-                <a href="gallery.html">
-                <div class="col-sm-12 col-md-9">
-                  <h2 class="featured-work__title featured-work__title--art">Visual Art <br> Gallery</h2>
-                  <img src="images/gallery-preview.jpg" alt="Visual Art" class="recent-work__item">
-                  <p class="featured-work__slider--title">Recent Projects</p>
-                </div>
-                </a>
-                <br>
-                <a href="mobials.html">
-                <div class="col-sm-12 col-md-9">
-                  <h2 class="featured-work__title featured-work__title--art">Mobials Inc. <br> Gets a Facelift</h2>
-                  <img src="images/gallery-preview.jpg" alt="Mobials Inc." class="recent-work__item">
-                  <p class="featured-work__slider--title">Recent Projects</p>
-                </div>
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="resume padding-tb-75 text-center white">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2 class="resume__title title">Interested in my background?</h2>
-            <a href="images/kristiana-vellucci-resume.pdf" target="new" class="btn btn-lg btn-primary">View My Resume</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="clearfix"></div>
-
-    <section class="top-shadow padding-tb-100 hidden-xs">
-      <div class="row">
-        <div class="col-sm-12 text-center">
-          <p class="subtitle">Who I've Created For</p>
-          <h2 class="title font-800 orange">My Clients</h2>
-          <p class="padding-tb-15 clients__blurb">During my years working in the digital space, I've done creative and development work for <br> not-for-profit's, businesses of varying sizes, start ups, and more!</p>
-        </div>
-      </div>
-      <div class="row padding-tb-100">
-        <div class="col-sm-2 col-sm-offset-1 clients">
-          <a href="http://www.devldn.com"><img src="images/devldn-logo.png" alt="Devldn" class="img-responsive"/></a>
-        </div>
-        <div class="col-sm-2 clients">
-          <a href="#"><img src="images/ivey-logo.png" alt="Ivey Business School" class="img-responsive"/></a>
-        </div>
-        <div class="col-sm-2 clients">
-          <a href="http://www.oakviewappraisals.com"><img src="images/oakview-logo.png" alt="Oakview Appraisals" class="clients__logo img-responsive"/><a>
-        </div>
-        <div class="col-sm-2 clients">
-          <a href="http://www.pranahomeopathy.ca"><img src="images/prana-logo.png" alt="Prana Homeopathy" class="img-responsive"/></a>
-        </div>
-        <div class="col-sm-2 clients">
-          <a href="http://www.upcyclebowties.ca"><img src="images/upcycle-bowties-logo.png" alt="Upcycle Bowties" class="img-responsive"/></a>
-        </div>
-      </div>
-      <div class="row padding-tb-100">
-        <div class="col-sm-2 col-sm-offset-1 clients">
-          <img src="images/volante-logo.png" alt="Volante Systems" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <a href="#"><img src="images/moss-logo.png" alt="Moss Digital" class="img-responsive"/></a>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/kitco-logo.png" alt="Kitco Metals" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/cal-creative-logo.png" alt="Cal Creative" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/lady-dynamic-logo.png" alt="Lady Dynamic" class="img-responsive"/>
-        </div>
-      </div>
-      <div class="row padding-tb-100">
-        <div class="col-sm-2 col-sm-offset-1 clients">
-          <img src="images/rum-and-molotov-logo.png" alt="Rum and Molotov" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/sean-leiba-logo.png" alt="Sean Leiba Regional Councellor" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/ehvent-logo.png" alt="Ehvent" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/precision-logo.png" alt="Precision" class="img-responsive"/>
-        </div>
-        <div class="col-sm-2 clients">
-          <img src="images/ubi-logo.png" alt="Ubi" class="img-responsive"/>
-        </div>
-      </div>
-    </section>
-    <div class="clearfix"></div>
-
-  <footer class="home-footer">
-    <div class="container-fluid no-padding">
-      <div class="col-sm-3 padding-50">
-        <img src="images/logo.png" alt="Logo" class="footer-logo">
-        <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
-        <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
-        <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
-        <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
-        <br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm"><br class="hidden-xs hidden-sm">
-        <p class="white padding-tb-15 hidden-xs hidden-sm">Made by yours truly.</p>
-      </div>
-      <div class="hidden-xs col-sm-5 padding-tb-50">
-        <div class="row">
-          <div class="hidden-sm col-md-6">
-            <h2 class="footer__title no-margin">Recent Projects</h2>
-            <br><br>
-            <a href="mobials.html" class="white font-300 footer__link">Mobials Inc. Rebrand</a><br>
-            <a href="softwarereviews.html" class="white font-300 footer__link">SoftwareReviews Mobile Survey</a><br>
-            <a href="gallery.html" class="white font-300 footer__link">Visual Art Gallery</a>
-          </div>
-          <div class="col-sm-11 col-sm-offset-1 col-md-offset-0 col-md-5">
-            <h2 class="footer__title no-margin">Oh, P.S.</h2>
-            <br><br>
-            <p class="white">© 2017 All rights reserved Kristiana Vellucci. <br><br> Brands mentioned above are property of their respective owner.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 footer__branding hidden-xs">
-        <a href="contact.html" class="title white">Work with Me <span class="fa fa-arrow-circle-right footer__arrow"></span></a>
-      </div>
-    </div>
-  </footer>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
-    <script src="js/scrollreveal.min.js" type="text/javascript"></script>
     <script src="js/parallax.js" type="text/javascript"></script>
     <script src="validator.js"></script>
     <script src="contact.js"></script>
@@ -575,18 +185,6 @@
 
     var parallax = new Parallax(scene)
     console.log(parallax)
-
-    // Changing the defaults
-    window.sr = ScrollReveal({ reset: false });
-
-    // Customizing a reveal set
-    sr.reveal('.about', { duration: 1000, distance: '100px', });
-    sr.reveal('.services__category', { duration: 1000, distance: '100px', });
-    sr.reveal('.blog__post', { duration: 1000, distance: '100px', });
-    sr.reveal('.title', { duration: 1000});
-    sr.reveal('.clients', { duration: 1000});
-    sr.reveal('.contact', { duration: 1000, distance: '100px', });
-
 
       $("#nav-toggle").click(function(){
           $("#nav-content").addClass("active-menu");
@@ -606,32 +204,6 @@
 
       $(".nav-content__item").click(function(){
           $("#nav-content").removeClass("active-menu");
-      });
-
-      $(function() {
-
-      	var $c = $('#clients__wrapper'),
-      		$w = $(window);
-
-      	$c.carouFredSel({
-      		align: false,
-      		items: 10,
-      		scroll: {
-      			items: 1,
-      			duration: 5000,
-      			timeoutDuration: 0,
-      			easing: 'linear',
-      			pauseOnHover: 'immediate'
-      		}
-      	});
-
-        $(function() {
-          var header = $(".clearHeader");
-          $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-          });
-        });
-
       });
 
       $(document).ready(function(){

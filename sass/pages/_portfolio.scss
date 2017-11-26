@@ -1,444 +1,253 @@
-/*----- Colours Circles -----*/
-.colors__box {
-  height: 225px;
-}
-
-.colors__circle {
-  height: 200px;
-  width: 200px;
-  @media only screen and (max-width : 979px) {
-    height: 180px;
-    width: 180px;
-    margin: 15px 15px 15px 0;
+.portfolio-body {
+  .portfolio-header {
+    margin-top: -150px;
+    padding: 200px 0 0;
   }
-  @media only screen and (max-width: 766px) {
-    display: block;
-    margin: 15px auto;
+
+  .portfolio-header__text--illustrations {
+    margin-top: 75px;
+    @media only screen and (max-width: $screen-xs-max) {
+      margin: 0 0 110px;
+    }
   }
-}
 
-.colors__box--green {
-  background: #93bb3f;
-}
+  .header__logo--portfolio {
+    position: relative;
+    z-index: 5;
+  }
 
-.colors__box--green2 {
-  background: #75953c;
-}
+  .portfolio-intro__skill {
+    margin-left: -75px;
+    font-size: 18px;
+    color: white;
+    @media only screen and (max-width: $screen-md-max) {
+      margin-left: 0;
+    }
+  }
 
-.colors__box--green3 {
-  background: #c0d88d;
-}
-
-.colors__box--purple {
-  background: #8555a5;
-}
-
-.colors__box--yellow {
-  background: #f9dc00;
-}
-
-.colors__box--red {
-  background: #eb0000;
-}
-
-.colors__box--blue {
-  background: #1b3539;
-}
-
-.colors__box--beige {
-  background: #d7b999;
-}
-
-.colors__box--pink {
-  background: #b68b71;
-}
-
-.colors__box--grey {
-  background: #cfd3d4;
-}
-
-.colors__box--mobials-purple {
-  background: #7459c8;
-}
-
-.colors__box--mobials-teal {
-  background: #3bcbc8;
-}
-
-.colors__box--mobials-grey {
-  background: $grey;
-}
-
-.colors__box--mobials-purple2 {
-  background: #58489b;
-}
-
-.colors__box--mobials-lg {
-  background: $light-grey;
-}
-
-.colors__box--mobials-charcoal {
-  background: $almost-black;
-}
-
-.colors {
-  border-top: 1px solid $light-grey;
-}
-
-
-/*----- Typography Sections -----*/
-
-.type__intro {
-  font-size: 100px;
-}
-
-.type__exo {
-  font-family: 'Exo', sans-serif;
-}
-
-.type__montserrat {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.type__roboto {
-  font-family: 'Roboto', sans-serif;
-}
-
-.type__sample {
-  margin-bottom: 0;
-}
-
-.type__font {
-  font-size: 25px;
-  margin-top: 0;
-}
-
-
-/*----- SoftwareReviews Styles -----*/
-.desktop-survey {
-  background: black url('../images/sr-desktop.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 600px;
-  h2 {
-    font-family: 'Montserrat', sans-serif;
+  .portfolio-intro__title {
+    color: white;
+    font-family: 'Playfair Display', serif;
     font-weight: 900;
+    font-size: 75px;
+    margin-left: -75px;
+    text-shadow: 1px 1px 15px rgba(0, 0, 0, .4);
+    @media only screen and (max-width: $screen-md-max) {
+      font-size: 55px;
+      margin-left: 0;
+    }
+    @media only screen and (max-width: $screen-md-min) {
+      font-size: 35px;
+    }
+  }
+
+  .portfolio-intro__link {
     color: white;
-    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: -75px;
+    transition: .5s ease;
+    @media only screen and (max-width: $screen-md-max) {
+      margin-left: 0;
+    }
+    &:hover {
+      color: lighten($pink, 5%);
+      text-decoration: none;
+    }
+  }
+
+  .portfolio-intro__skill--illustrations,
+  .portfolio-intro__title--illustrations,
+  .portfolio-intro__link--illustrations {
+    color: $almost-black;
+    margin-left: -175px;
+    @media only screen and (max-width: $screen-sm-max) {
+      margin-left: -75px;
+    }
+
+    @media only screen and (max-width: $screen-xs-max) {
+      margin-left: 0;
+    }
+  }
+
+  .portfolio-intro__title--illustrations {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, .4);
+  }
+
+  .portfolio-info {
+    background: $lightest-grey;
+    margin-top: -50px;
+    padding: 150px 0;
+  }
+
+  p.portfolio--info__text {
+    line-height: 2;
+  }
+
+  .portfolio-section-1 {
+    margin-top: -75px;
+  }
+
+  .portfolio-item {
+    height: 103vh;
+    background: #f8f8f8;
+    margin-top: -94px;
+    border-right: 1px solid $light-grey;
+    overflow: hidden;
+    @media only screen and (max-width: $screen-xs-max) {
+      height: auto;
+      margin-top: 0;
+    }
+  }
+
+  .portfolio-item-container {
+    @media only screen and (max-width: $screen-xs-max) {
+      overflow: hidden;
+    }
+  }
+
+  .portfolio-item__content {
+    padding: 40vh 25px 0;
+    transition: .25s ease;
+    @media only screen and (max-width: $screen-xs-max) {
+      padding: 50px 25px;
+    }
+  }
+
+  .portfolio-item__title {
+    color: $almost-black;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
+    @media only screen and (max-width: $screen-md-max) {
+      font-size: 32px;
+    }
+    @media only screen and (max-width: $screen-sm-max) {
+      font-size: 26px;
+    }
+  }
+
+  .portfolio-item__number {
+    color: $light-grey;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 900;
+    font-size: 300px;
+    line-height: .65;
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    letter-spacing: -25px;
+  }
+
+  .portfolio-item__skillset {
+    color: $text;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
     line-height: 1;
+    text-transform: uppercase;
+    @media only screen and (max-width: $screen-xs-max) {
+      font-size: 10px;
+    }
+  }
+
+  .portfolio-item__img {
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    transition: .5s ease;
+    opacity: 0;
+    @media only screen and (max-width: $screen-xs-max) {
+      max-width: 250px;
+      opacity: 1;
+      right: -10%;
+    }
+  }
+
+  .portfolio-item__img--sr {
+    @media only screen and (max-width: $screen-xs-max) {
+      max-width: 200px;
+      bottom: -50px;
+    }
+  }
+
+  .portfolio-item {
+    &:hover {
+      background: $almost-black;
+      .portfolio-item__content {
+        padding: 15vh 25px 0;
+        @media only screen and (max-width: $screen-xs-max) {
+          padding: 50px 25px;
+        }
+      }
+      .portfolio-item__title {
+        color: $orange;
+      }
+      .portfolio-item__skillset {
+        color: white;
+      }
+      .portfolio-item__number {
+        opacity: 0;
+      }
+      .portfolio-item__img {
+        opacity: 1;
+        right: -10%;
+      }
+    }
+  }
+  .portfolio-item__mobials {
+  }
+  .portfolio-item__link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.portfolio-page {
+  overflow: hidden;
+  @media only screen and (max-width: $screen-sm-max) {
+    overflow: visible;
   }
 }
 
 
-/*----- Gallery Content -----*/
-
-.gallery-content {
-  margin-left: 30px;
-  @media only screen and (max-width: 767px) {
-    margin-left: 0;
-  }
-}
-
-.gallery__tab {
-  border: none !important; //overwrites bootstrap
-  color: $text;
-  font-family: 'Source Sans Pro', sans-serif;
-  padding: 5px 0 !important; //overwrites bootstrap
-  &:hover {
-    background: none !important; //overwrites bootstrap
-    color: $pink;
-  }
-  @media only screen and (max-width: 1065px) {
-    padding: 3px 0 !important; //overwrites bootstrap
-  }
-}
-
-.gallery__titles {
-  color: $orange;
+/*----------Portfolio Navigation----------*/
+.previous, .next {
+  color: white;
   font-family: 'Playfair Display', serif;
-  font-size: 35px;
-}
-
-.gallery__work-title {
-  color: $orange;
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  line-height: .9;
-  @media only screen and (max-width: 1065px) {
-    font-size: 35px;
-  }
-}
-
-
-
-
-
-/*----- Homepage Portfolio Styles -----*/
-
-.portfolio-lead {
-  font-family: 'Playfair Display', serif;
-  font-size: 35px !important;
-  color: $text;
-  @media only screen and (max-width : 979px) {
-    font-size: 35px !important;
-    line-height: .95;
-  }
-}
-
-.portfolio__nav {
-  p {
-    font-family: 'Playfair Display', serif;
-  }
-}
-
-.portfolio-piece__title {
-  font-family: 'Playfair Display', serif;
-  font-size: 75px;
-  margin-top: 100px;
-  @media only screen and (max-width: 767px) {
-    margin-top: 0;
-    font-size: 60px;
-  }
-}
-
-.portfolio-piece__lead {
-  font-size: 20px;
-}
-
-.portfolio-piece__location {
-  font-size: 12px;
+  transition: .5s ease;
   text-transform: uppercase;
-}
-
-
-/*----- About Sections -----*/
-
-.about-facts {
-  margin-top: -15px;
-  text-align: right;
-  @media only screen and (max-width: 767px) {
-    text-align: left;
-    padding: 25px;
-  }
-}
-
-.about-facts__title {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  margin-bottom: 0;
-}
-
-.about-facts__link {
-  font-size: 16px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-
-/*----- Sketches Page -----*/
-
-.sketch-thumbnails {
-  height: 1000px;
-}
-
-.thumbnail__matt {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
-
-.thumbnail-sketch__matt {
-  max-width: 32%;
-  position: absolute;
-  left: 245px;
-  top: 200px;
-  z-index: 2;
-}
-
-.thumbnail__alex {
-  position: absolute;
-  top: 300px;
-  left: 20%;
-  width: 50%;
-  z-index: 1;
-}
-
-.thumbnail-sketch__alex {
-  max-width: 32%;
-  position: absolute;
-  top: 500px;
-  left: 375px;
-  z-index: 2;
-  @media only screen and (max-width: 767px) {
-    left: 200px;
-  }
-}
-
-.thumbnail__kristiana {
-  max-width: 50%;
-  position: absolute;
-  top: 600px;
-  z-index: 1;
-}
-
-.thumbnail-sketch__kristiana {
-  max-width: 32%;
-  position: absolute;
-  top: 780px;
-  left: 225px;
-  z-index: 2;
-}
-
-
-/*----- Reviewsii Page -----*/
-
-.reviewsii-booklet {
-  background: $lightest-grey;
-  h2 {
-    font-family: 'Playfair Display', serif;
-  }
-}
-
-.reviewsii-hat {
-  h2 {
-    font-family: 'Playfair Display', serif;
-  }
-}
-
-.blog-post__content {
-  line-height: 1.5;
-  p {
-    padding: 5px 0;
-  }
-  @media only screen and (max-width: 767px) {
-    padding: 0 25px;
-  }
-}
-
-.portfolio-blurb {
-  background: repeating-linear-gradient(135deg, white, $light-grey 1px, white 2px, white 10px);
-  margin: 35px 0;
-}
-
-.reviewsii-carousel__hat {
-  width: 100%;
-}
-
-.portfolio-nav {
-  h3 {
-    font-family: 'Playfair Display', serif;
-    margin-top: 0;
-  }
-}
-
-
-
-
-
-
-.portfolio-nav__previous {
-  color: $text;
-  transition: 0.5s ease;
+  background: $almost-black;
+  padding: 15px;
+  text-align: center;
+  width: 150px;
+  z-index: 3;
   &:hover {
-    color: white;
+    background: lighten($almost-black, 5%);
+    color: lighten($dark-text, 5%);
+    text-decoration: none;
   }
 }
 
-.portfolio-nav__next {
-  color: $text;
-  transition: 0.5s ease;
-  &:hover {
-    color: white;
-  }
+.previous {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  position: fixed;
+  left: -50px;
+  top: 50vh;
 }
 
-.portfolio-nav__next--sr,
-.portfolio-nav__next--tempo,
-.portfolio-nav__next--sketches,
-.portfolio-nav__next--reviewsii,
-.portfolio-nav__next--mobials {
-  background: $lightest-grey;
-}
-
-.portfolio-nav__previous--sr,
-.portfolio-nav__previous--tempo,
-.portfolio-nav__previous--sketches,
-.portfolio-nav__previous--reviewsii,
-.portfolio-nav__previous--mobials {
-  background: $light-grey;
-}
-
-.portfolio-nav__next--sr {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-sketches.jpg');
-  }
-}
-
-.portfolio-nav__previous--sr {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-mobials.jpg');
-  }
-}
-
-.portfolio-nav__next--tempo {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-reviewsii.jpg');
-  }
-}
-
-.portfolio-nav__previous--tempo {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-sketches.jpg');
-  }
-}
-
-.portfolio-nav__next--sketches {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-tempo.jpg');
-  }
-}
-
-.portfolio-nav__previous--sketches {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-softwarereviews.jpg');
-  }
-}
-
-.portfolio-nav__next--reviewsii {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-mobials.jpg');
-  }
-}
-
-.portfolio-nav__previous--reviewsii {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-sketches.jpg');
-  }
-}
-
-.portfolio-nav__next--mobials {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-softwarereviews.jpg');
-  }
-}
-
-.portfolio-nav__previous--mobials {
-  &:hover {
-    @include full-bg('../images/portfolio-nav-reviewsii.jpg');
-  }
-}
-
-.about__softwarereviews {
-  margin-top: 50px;
-  @media only screen and (max-width : 979px) {
-    margin-top: 0;
-  }
-}
-
-.sr-hero__phone {
-  max-width: 300px;
+.next {
+  -webkit-transform: rotate(-270deg);
+  -moz-transform: rotate(-270deg);
+  -ms-transform: rotate(-270deg);
+  -o-transform: rotate(-270deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  position: fixed;
+  right: -50px;
+  top: 50vh;
 }

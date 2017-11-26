@@ -43,16 +43,13 @@
     <div class="nav-white">
       <div class="menu">
         <div class="menu menu_minified">
-          <a href="#" id="nav-toggle2">
-            <span class="button button--hamburger">
-              <img src="images/close.png" alt="close icon">
-            </span>
+          <a href="#" id="nav-toggle2" class="menu__close">
+            <span></span>Close
           </a>
           <ul class="nav-content__links">
             <li class="nav-content__item"><a href="index.html" class="nav-content__link">Home</a></li>
-            <li class="nav-content__item"><a href="index.html#portfolio" class="nav-content__link">Portfolio</a></li>
+            <li class="nav-content__item"><a href="portfolio.html" class="nav-content__link">Portfolio</a></li>
             <li class="nav-content__item"><a href="gallery.html" class="nav-content__link">Visual Art</a></li>
-            <li class="nav-content__item"><a href="blog.html" class="nav-content__link">Blog</a></li>
             <li class="nav-content__item"><a href="contact.html" class="nav-content__link">Contact</a></li>
           </ul>
           <div class="nav-content__credits text-center">
@@ -62,7 +59,7 @@
               <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
               <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
             </div>
-            <p class="padding-tb-15">Made by yours truly.</p>
+            <p class="padding-tb-15 white">Made by yours truly.</p>
           </div>
         </div>
       </div>
@@ -72,7 +69,7 @@
   <div class="row">
     <div class="container">
       <div class="col-xs-12">
-        <a href="index.html"><img src="images/logo-dark.png" alt="Logo" class="header__logo animated fadeInDown"></a>
+        <a href="index.html"><img src="images/temp-logo-black.png" alt="Logo" class="header__logo animated fadeInDown"></a>
       </div>
     </div>
   </div>
@@ -98,11 +95,10 @@
             </div>
         </div>
         <div class="col-xs-12 col-sm-8 col-sm-offset-1">
-          <h2 class="title almost-black">Be Heard</h2>
-          <p class="padding-tb-30">Have you enjoyed your visit? Want to talk about new projects or have freelance inquiries? Or maybe you just need a willing victim to practice <br> your whale-intended puns on. Either way, tell me about it! I promise I'll get back to you as soon as possible.</p>
-
+          <h2 class="title almost-black">Say Hello</h2>
+          <p class="contact__blurb">Have you enjoyed your visit? Want to talk about new projects or have freelance inquiries? Or maybe you just need a willing victim to practice <br class="hidden-xs hidden-sm hidden-md"> your whale-intended puns on. Either way, tell me about it! I promise I'll get back to you as soon as possible.</p>
           <form id="contact-form" method="post" action="contact.php" role="form">
-            <input type="hidden" name="human" />
+          <input type="hidden" name="human" />
 	    <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
@@ -157,32 +153,32 @@
 
   <footer>
     <div class="container-fluid no-padding">
-      <div class="col-sm-3 padding-50">
+      <div class="col-md-3 footer__brand-links padding-tb-50">
         <img src="images/logo.png" alt="Logo" class="footer-logo">
         <a href="http://www.linkedin.com/in/kristiana-rose-vellucci/" target="new"><span class="fa fa-linkedin"></span></a>
         <a href="http://www.instagram.com/kristianavellucci/" target="new"><span class="fa fa-instagram"></span></a>
         <a href="https://dribbble.com/kristianavellucci" target="new"><span class="fa fa-dribbble"></span></a>
         <a href="http://www.behance.net/kristianavellucci" target="new"><span class="fa fa-behance"></span></a>
-        <br><br><br>
         <p class="white padding-tb-15">Made by yours truly.</p>
       </div>
-      <div class="hidden-xs col-sm-5 padding-tb-50">
+      <div class="hidden-xs hidden-sm col-md-5 padding-tb-50">
         <div class="row">
-          <div class="hidden-sm col-md-6">
+          <div class="col-sm-6">
             <h2 class="footer__title no-margin">Recent Projects</h2>
             <br><br>
             <a href="mobials.html" class="white font-300 footer__link">Mobials Inc. Rebrand</a><br>
             <a href="softwarereviews.html" class="white font-300 footer__link">SoftwareReviews Mobile Survey</a><br>
             <a href="gallery.html" class="white font-300 footer__link">Visual Art Gallery</a>
           </div>
-          <div class="col-sm-11 col-sm-offset-1 col-md-offset-0 col-md-5">
+          <div class="col-sm-6">
             <h2 class="footer__title no-margin">Oh, P.S.</h2>
             <br><br>
-            <p class="white">© 2017 All rights reserved Kristiana Vellucci. <br><br> Brands mentioned above are property of their respective owner.</p>
+            <p class="white">© 2017 All rights reserved. <br><br> Brands mentioned above are property <br> of their respective owner.</p>
           </div>
         </div>
       </div>
-      <div class="col-sm-4 footer__branding hidden-xs">
+
+      <div class="hidden-xs hidden-sm col-md-4 footer__branding">
         <a href="contact.html" class="title white">Work with Me <span class="fa fa-arrow-circle-right footer__arrow"></span></a>
       </div>
     </div>
@@ -198,18 +194,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript">
-    // Changing the defaults
-    window.sr = ScrollReveal({ reset: false });
-
-    // Customizing a reveal set
-    sr.reveal('.about', { duration: 1000, distance: '100px', });
-    sr.reveal('.featured-work', { duration: 1000, distance: '100px', });
-    sr.reveal('.services__category', { duration: 1000, distance: '100px', });
-    sr.reveal('.blog__post', { duration: 1000, distance: '100px', });
-    sr.reveal('.title', { duration: 1000});
-    sr.reveal('.clients', { duration: 1000});
-    sr.reveal('.contact', { duration: 1000, distance: '100px', });
-
 
       $("#nav-toggle").click(function(){
           $("#nav-content").addClass("active-menu");
@@ -229,32 +213,6 @@
 
       $(".nav-content__item").click(function(){
           $("#nav-content").removeClass("active-menu");
-      });
-
-      $(function() {
-
-      	var $c = $('#clients__wrapper'),
-      		$w = $(window);
-
-      	$c.carouFredSel({
-      		align: false,
-      		items: 10,
-      		scroll: {
-      			items: 1,
-      			duration: 5000,
-      			timeoutDuration: 0,
-      			easing: 'linear',
-      			pauseOnHover: 'immediate'
-      		}
-      	});
-
-        $(function() {
-          var header = $(".clearHeader");
-          $(window).scroll(function() {
-            var scroll = $(window).scrollTop();
-          });
-        });
-
       });
 
       $(document).ready(function(){
