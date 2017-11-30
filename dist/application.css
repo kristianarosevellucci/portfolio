@@ -487,7 +487,7 @@ p {
 .contact h2 {
   font-size: 70px;
   text-transform: uppercase; }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 768px) {
     .contact h2 {
       font-size: 60px; } }
 
@@ -532,22 +532,14 @@ p {
 #contact-form {
   margin-bottom: 100px; }
 
-.clients img {
-  display: block;
-  margin: 0 auto; }
-
-.clients__blurb {
-  font-size: 14px; }
-
 .contact__input {
   width: 100%;
   outline: none;
   margin: 15px 0 35px;
   padding: 20px 0;
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #cccccc;
   box-shadow: none;
-  bckground: none;
   color: #5d5d5d;
   font-weight: 300;
   font-family: 'Source Sans Pro',sans-serif; }
@@ -710,9 +702,8 @@ footer {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed; }
-  @media only screen and (max-width: 766px) {
+  background-size: cover; }
+  @media only screen and (max-width: 991px) {
     .home-hero {
       background: black url("../images/hero.jpg") no-repeat center center;
       height: 100vh; } }
@@ -734,7 +725,6 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh; }
   @media only screen and (max-width: 600px) {
     .error-hero {
@@ -751,38 +741,11 @@ footer {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
   height: 100vh; }
-
-.header-greeting {
-  font-size: 60px;
-  font-family: 'Playfair Display', serif;
-  color: white;
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .header-greeting {
-      font-size: 45px; } }
 
 .header__logo {
   width: 175px;
   margin: 25px; }
-
-.header__quote {
-  width: 200px;
-  position: absolute;
-  left: 70px;
-  bottom: 50px;
-  color: white;
-  font-size: 12px; }
-
-.header__services {
-  position: absolute;
-  right: 175px;
-  bottom: 85px;
-  width: 175px; }
-  @media only screen and (max-width: 767px) {
-    .header__services {
-      right: 75px; } }
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -1213,7 +1176,7 @@ footer {
   opacity: .4; }
 
 .about__header {
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   margin: 100px 0 50px;
   font-size: 90px;
@@ -1224,7 +1187,7 @@ footer {
   font-size: 32px;
   list-style-type: none;
   margin-left: -40px;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: #cccccc; }
 
@@ -1259,7 +1222,7 @@ footer {
   font-weight: 300;
   text-transform: uppercase;
   padding: 10px 0;
-  color: #666666;
+  color: #555555;
   letter-spacing: 1px; }
 
 .about__hashtag {
@@ -1267,7 +1230,7 @@ footer {
 
 /*---------- Illustrations Styles ----------*/
 .portfolio-header--illustrations {
-  background: black url("../images/illustrations-hero.jpg") no-repeat center bottom;
+  background: black url("../images/portfolio/illustrations-hero.jpg") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1464,7 +1427,7 @@ a.lightbox img {
 
 /*---------- Mobials Page ----------*/
 .portfolio-header--mobials {
-  background: black url("../images/mobials-hero.png") no-repeat center center;
+  background: black url("../images/portfolio/mobials-hero.png") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1865,7 +1828,7 @@ a.lightbox img {
 
 /*----- SoftwareReviews Styles -----*/
 .portfolio-header--sr {
-  background: black url("../images/sr-hero-color.jpg") no-repeat center center;
+  background: black url("../images/portfolio/sr-hero-color.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1876,16 +1839,16 @@ a.lightbox img {
   margin-top: -100px; }
 
 .desktop-survey {
-  background: black url("../images/sr-desktop.jpg") no-repeat center center;
+  background: black url("../images/portfolio/sr-desktop.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   height: 600px; }
   .desktop-survey h2 {
+    color: #181719;
     font-family: 'Playfair Display', sans-serif;
     font-weight: 900;
-    color: #181719;
     line-height: 1;
     font-size: 62px;
     margin-bottom: 25px; }

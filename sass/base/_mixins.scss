@@ -1,5 +1,5 @@
 @mixin full-bg($image) {
-  background: black url($image) no-repeat center bottom;
+  background: black url($image) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

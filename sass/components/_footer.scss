@@ -56,11 +56,7 @@ footer {
 }
 
 .footer__branding {
-  background: black url('../images/footer-bg.jpg') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  @include full-bg('../images/footer-bg.jpg');
   height: 300px;
   font-family: 'Playfair Display';
   font-size: 50px;

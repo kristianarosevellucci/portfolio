@@ -35,7 +35,7 @@
 }
 
 .about__header {
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-weight: 900;
   margin: 100px 0 50px;
   font-size: 90px;
@@ -47,9 +47,9 @@
   font-size: 32px;
   list-style-type: none;
   margin-left: -40px;
-  font-family: Playfair Display;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
-  color: #cccccc;
+  color: $grey;
 }
 
 .about__service-content {
@@ -90,7 +90,7 @@
   font-weight: 300;
   text-transform: uppercase;
   padding: 10px 0;
-  color: #666666;
+  color: $text;
   letter-spacing: 1px;
 }
 
