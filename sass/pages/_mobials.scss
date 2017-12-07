@@ -216,6 +216,8 @@
   overflow: hidden;
   position: relative;
   height: 75vh;
+  background: white;
+  border-top: 2px solid $light-grey;
 }
 
 .grid--loaded {
