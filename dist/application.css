@@ -745,7 +745,7 @@ footer {
 
 .header__logo {
   width: 175px;
-  margin: 25px; }
+  margin: 5px 25px; }
 
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -1686,7 +1686,7 @@ a.lightbox img {
       margin-left: 0; } }
 
 .portfolio-body .portfolio-intro__title--illustrations {
-  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4); }
+  text-shadow: none; }
 
 .portfolio-body .portfolio-info {
   background: #f8f8f8;
