@@ -183,10 +183,10 @@
 
 .portfolio-work__link {
   font-family: 'Playfair Display', serif;
-  color: $orange;
+  color: $pink;
   letter-spacing: 1px;
   &:hover {
-    color: lighten($orange, 10%);
+    color: lighten($pink, 10%);
   }
 }
 
@@ -208,7 +208,7 @@
 }
 
 .mobials-screens {
-  background: $lightest-grey;
+  background: $grey;
   padding: 100px 0 50px;
 }
 
@@ -217,7 +217,7 @@
   position: relative;
   height: 75vh;
   background: white;
-  border-top: 2px solid $light-grey;
+  border-top: 2px solid $grey;
 }
 
 .grid--loaded {

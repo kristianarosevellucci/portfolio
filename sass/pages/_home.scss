@@ -1,11 +1,3 @@
-.home__welcome {
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  font-size: 70px;
-  color: lighten($yellow, 25%);
-  margin-top: 10vh;
-}
-
 .about-link {
   position: absolute;
   bottom: 40px;
@@ -21,79 +13,9 @@
   }
 }
 
-.about-me {
-  position: absolute;
-  top: -100vh;
-  left: 0;
-  background: white;
-  z-index: 100;
-  width: 70%;
-  height: 100vh;
-  overflow: scroll;
-  transition: .2s ease-in-out;
-  opacity: .4;
-}
-
-.about__header {
-  font-family: 'Playfair Display', serif;
-  font-weight: 900;
-  margin: 100px 0 50px;
-  font-size: 90px;
-  line-height: .9;
-  color: $almost-black;
-}
-
-.about__service {
-  font-size: 32px;
-  list-style-type: none;
-  margin-left: -40px;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: $grey;
-}
-
-.about__service-content {
-  padding-bottom: 50px;
-}
-
-.active-about {
-  top: 0;
-  height: 100vh;
-  opacity: 1;
-}
-
-.about-me__logo-container {
-  height: 100px;
-  @media only screen and (max-width: $screen-xs-max) {
-    padding: 0 35px 15px;
-  }
-}
-
-
-.about {
-  padding-top: 100vh;
-}
-
-.about-content {
-  background: white;
-}
 
 .home-bg {
   width: 100%;
   height: 100vh;
   position: fixed;
-}
-
-.about__whoami {
-  border-bottom: 1px solid $light-grey;
-  font-family: 'Playfair Display', serif;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding: 10px 0;
-  color: $text;
-  letter-spacing: 1px;
-}
-
-.about__hashtag {
-  padding: 0 25px 0 0;
 }

@@ -19,58 +19,10 @@
 .pb-50 {margin: 0 0 50px 0;}
 .mr-50 {margin: 0 0 0 50px;}
 
-.font-100 {font-weight: 100;}
-.font-200 {font-weight: 200;}
-.font-300 {font-weight: 300;}
-.font-400 {font-weight: 400;}
-.font-500 {font-weight: 500;}
-.font-600 {font-weight: 600;}
-.font-700 {font-weight: 700;}
-.font-800 {font-weight: 800;}
-
 .pink {color: $pink;}
-.yellow {color: $yellow;}
-.orange {color: $orange;}
-.almost-black {color: $almost-black;}
+.almost-black {color: $charcoal;}
 
 .box-shadow {box-shadow: 0 0 20px rgba(0, 0, 0, .4);}
-
-.top-shadow {
-  -webkit-box-shadow: inset 0 20px 20px -20px rgba(50, 50, 50, 0.8);
-  -moz-box-shadow: inset 0 20px 20px -20px rgba(50, 50, 50, 0.8);
-  box-shadow: inset 0 20px 20px -20px rgba(50, 50, 50, 0.8);
-  font: bold 18px/1.2em sans-serif;
-  height: 100px;
-  text-align: center;
-}
-
-.yellow-block {
-  background: $yellow;
-  width: 15px;
-  height: 15px;
-  margin: 5px;
-}
-
-.orange-block {
-  background: $orange;
-  width: 15px;
-  height: 15px;
-  margin: 5px;
-}
-
-.smaller {
-  font-size: smaller;
-}
-
-h2 {
-  font-size: 50px;
-  color: $text;
-}
-
-p {
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: 300;
-}
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -120,13 +72,6 @@ p {
   letter-spacing: 3px;
   font-weight: 400;
   font-size: 12px;
-}
-
-.portfolio-small-title {
-  font-size: 24px;
-  font-family: 'Playfair Display', serif;
-  margin-bottom: 25px;
-  color: $orange;
 }
 
 .box-shadow {

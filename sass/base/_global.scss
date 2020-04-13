@@ -57,7 +57,7 @@ h3 {
 
 .work-title {
   color: $charcoal;
-  font-size: 68px;
+  font-size: 56px;
   font-family: 'Vollkorn', serif;
 }
 
@@ -92,5 +92,13 @@ h3 {
   text-decoration: none;
   &:hover {
     color: $brown;
+  }
+}
+
+.footer-cta__link {
+  color: $brown;
+  transition: .5s ease;
+  &:hover {
+    color: darken($brown, 15%);
   }
 }
