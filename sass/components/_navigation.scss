@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     right: -100%;
-    background: $almost-black;
+    background: $green;
     max-width: 350px;
     width: 100%;
     height: 100%;
@@ -42,18 +42,14 @@
 }
 
 .menu__close {
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
-  margin: 10px;
-  text-align: center;
-  transition: .5s ease;
+    position: absolute;
+    top: 20px;
+    right: 40px;
   &:hover {
-    color: $orange;
+    color: $pink;
     text-decoration: none;
   }
 }
-
   .active-items {
     opacity: 1;
     transition: 1.5s;
@@ -94,7 +90,7 @@
       width: 50px;
       height: 50px;
       display: block;
-      background: $almost-black;
+      background: $green;
   }
 
   .menu__minified .button {
@@ -133,8 +129,8 @@
   .nav-content__item {
     list-style-type: none;
     text-align: center;
-    font-size: 44px;
-    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-family: 'Vollkorn', serif;
     text-decoration: none;
     line-height: 1.4;
   }
@@ -159,13 +155,13 @@
       padding: 20px 0;
       color: white;
       &:hover {
-        color: $orange;
+        color: $pink;
       }
     }
   }
 
 .nav-content--recent-work {
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Vollkorn', serif;
   font-weight: 800;
 }

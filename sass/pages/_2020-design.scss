@@ -1,0 +1,315 @@
+body {
+  background: #ffedea;
+  overflow-x: hidden;
+}
+
+.sticky-nav {
+  background: white;
+    position: fixed;
+    width: 95%;
+    top: 0;
+    display: block;
+    margin: 0 auto;
+    left: 2.5%;
+    z-index: 150;
+}
+
+.stripe {
+  height: 250px;
+  width: 100%;
+  margin: 200px 0;
+  @media only screen and (max-width: $screen-sm-max) {
+    display: none;
+  }
+}
+
+.stripe-prh {
+  background: #EFEBE8;
+  background: $pink;
+}
+
+.stripe-interac {
+  background: #F0B51C;
+}
+
+.hero {
+  padding-top: 100px;
+}
+
+.hero-text {
+  padding-left: 50px;
+}
+
+.header__logo {
+  margin-left: 75px;
+}
+
+.product-preview {
+  padding: 100px 0;
+  @media only screen and (max-width: $screen-sm-max) {
+    padding: 75px 50px;
+  }
+}
+
+.preview1 {
+  position: absolute;
+  right: 475px;
+  top: 300px;
+  @media only screen and (max-width: $screen-sm-max) {
+    display: none;
+  }
+}
+
+.preview2 {
+  position: absolute;
+  top: 0;
+}
+
+.preview3 {
+  @media only screen and (max-width: $screen-sm-max) {
+    padding: 30px 0;
+  }
+}
+
+.preview4 {
+  margin-top: -250px;
+}
+
+.preview1, .preview2, .preview4 {
+  @media only screen and (max-width: $screen-sm-max) {
+    display: block;
+    margin: 20px auto;
+    position: relative;
+  }
+}
+
+.preview-title {
+  padding: 80px 0 0;
+}
+
+.preview-blurb {
+  padding: 100px 0 0;
+  @media only screen and (max-width: $screen-sm-max) {
+    padding: 30px 0 0;
+  }
+}
+
+.previews-prh {
+  background: $pink;
+  margin: 150px 0;
+  @media only screen and (max-width: $screen-sm-max) {
+    margin: 75px 0;
+  }
+}
+
+.design-cta {
+  margin: 0 0 30px 0;
+}
+
+.design-cta__link {
+  color: white;
+  font-family: 'Vollkorn', serif;
+  font-size: 38px;
+  transition: .5s ease;
+  &:hover {
+    color: $pink;
+    text-decoration: none;
+  }
+  .icon {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+}
+
+.design-link-out {
+  @include full-bg('../images/floral-cta.svg');
+  color: white;
+}
+
+.team-member {
+  float: left;
+  max-width: 250px;
+  padding-right: 55px;
+  @media only screen and (max-width: $screen-sm-max) {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+}
+
+/*Home Styles*/
+.about-title {
+  padding-bottom: 70px;
+}
+
+.logo-quilt-title {
+  padding-bottom: 60px;
+}
+
+.logo-quilt-img {
+  max-width: 120px;
+  vertical-align: middle;
+}
+
+.logo-quilt-row {
+  height: 100px;
+}
+
+/*Interac Specific*/
+
+.color-band {
+  margin: 0 0 0 -10%;
+  padding: 50px 0 50px 10%;
+  width: 110%;
+}
+
+.ocre-band {
+  background: #F0B51C;
+}
+
+.charcoal-band {
+  background: #292B31;
+  color: white;
+  h3 {
+    color: white;
+  }
+}
+
+.grey-band {
+  background: #EBE9F2;
+}
+
+.interac-1 {
+  margin-left: -75px;
+  position: relative;
+  z-index: 2;
+}
+
+.interac-dots-1 {
+  position: absolute;
+  max-width: 200px;
+  top: -30px;
+  right: 60px;
+}
+
+.interac-dots-2 {
+  max-width: 200px;
+  position: absolute;
+  right: 90%;
+  top: 300px;
+}
+
+.ina-colors {
+  padding-top: 150px;
+}
+
+/*Penguin Specific*/
+.prh-hero-1{
+  position: absolute;
+  right: 30px;
+  top: -70px;
+  z-index: 3;
+}
+
+.prh-hero-2 {
+  z-index: 4;
+  position: absolute;
+  right: 80%;
+  top: 230px;
+  max-width: 300px;
+}
+
+.prh-dots-1 {
+  position: absolute;
+  max-width: 200px;
+  top: -100px;
+  right: 0px;
+}
+
+.prh-dots-2 {
+  max-width: 200px;
+  position: absolute;
+  right: 115%;
+  top: 375px;
+}
+
+.col-20 {
+  float: left;
+  width: 20%;
+}
+
+.bleed-row {
+  margin-left: -10%;
+  width: 120%;
+}
+
+.pb-150 {
+  padding-bottom: 150px;
+  padding-right: 50px;
+}
+
+/*Portfolio Page*/
+.work-item {
+  border-bottom: 1px solid $grey;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  &:hover {
+    .design-img {
+      right: 300%;
+      opacity: 1;
+    }
+    h2, p {
+      color: $brown;
+    }
+  }
+  p {
+    margin-top: 35px;
+  }
+  h2, p {
+    color: $charcoal;
+    transition: .5s ease;
+  }
+}
+
+.design-img {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  min-width: 300px;
+  opacity: 0;
+  transition: 0.5s ease;
+  z-index: 100;
+}
+
+.pink-box {
+  background: $pink;
+  height: 550px;
+  width: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.design-header {
+  position: relative;
+  z-index: 2;
+  h1 {
+    margin: 75px 0 0;
+  }
+}
+
+.design-preview-1 {
+  margin-top: 150px;
+}
+
+.design-preview-3 {
+  margin-top: 75px;
+}
+
+.logo-quilt-row {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

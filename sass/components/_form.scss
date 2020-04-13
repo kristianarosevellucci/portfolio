@@ -1,17 +1,15 @@
 .contact__input {
   width: 100%;
   outline: none;
-  margin: 15px 0 35px;
-  padding: 20px 0;
-  border: none;
-  border-bottom: 2px solid $grey;
+  margin: 15px 0 25px;
+  border: 1px solid $grey;
   box-shadow: none;
-  color: #5d5d5d;
-  font-weight: 300;
-  font-family: 'Source Sans Pro',sans-serif;
+  color: $charcoal;
+  font-family: 'Titillium Web',sans-serif;
+  height: 45px;
   &:focus {
     box-shadow: none;
-    border-bottom: 5px solid $almost-black;
+    border: 1px solid $pink;
   }
 }
 
@@ -19,6 +17,6 @@
   resize: none;
   color: #5d5d5d;
   font-weight: 300;
-  font-family: 'Source Sans Pro',sans-serif;
+  font-family: 'Titillium Web',sans-serif;
   height: 242px !important; //overwrites bootstrap
 }

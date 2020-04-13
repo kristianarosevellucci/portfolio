@@ -1,42 +1,7 @@
 /*---------- Contact Form ----------*/
-.contact__blocks--yellow {
-  width: 20px;
-  float: left;
-  @media only screen and (max-width: $screen-sm-max) {
-    width: 10px;
-  }
-}
-.contact__blocks--orange {
-  width: 20px;
-  float: left;
-  margin-top: 20px;
-  @media only screen and (max-width: $screen-sm-max) {
-    width: 10px;
-    margin-left: 10px;
-  }
-}
-
-.contact__blocks--right {
-  padding-top: 425px;
-}
 
 .contact__blurb {
   padding: 10px 0 50px;
-}
-
-.contact {
-  h2 {
-    font-size: 70px;
-    text-transform: uppercase;
-    @media only screen and (max-width: $screen-sm-min) {
-      font-size: 60px;
-    }
-  }
-  p {
-    @media only screen and (max-width: $screen-sm-max) {
-      font-size: 13px;
-    }
-  }
 }
 
 .btn.disabled {
@@ -69,8 +34,8 @@
 }
 
 .thankyou-lead {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: $pink;
+  font-family: 'Titillium Web', sans-serif;
+  color: $brown;
   font-size: 18px;
   margin-top: 25px;
 }
@@ -82,4 +47,9 @@
 
 #contact-form {
   margin-bottom: 100px;
+}
+
+label {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 500;
 }
