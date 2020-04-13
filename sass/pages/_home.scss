@@ -10,9 +10,9 @@
   position: absolute;
   bottom: 40px;
   left: 50px;
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px;
+  color: $green;
+  font-family: 'Vollkorn', serif;
+  font-size: 24px;
   @media only screen and (max-width: $screen-xs-max) {
     position: relative;
     text-align: center;

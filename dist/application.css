@@ -990,9 +990,9 @@ footer {
   position: absolute;
   bottom: 40px;
   left: 50px;
-  color: white;
-  font-family: 'Playfair Display', serif;
-  font-size: 18px; }
+  color: #043227;
+  font-family: 'Vollkorn', serif;
+  font-size: 24px; }
   @media only screen and (max-width: 767px) {
     .about-link {
       position: relative;
@@ -1715,9 +1715,6 @@ body {
   max-width: 120px;
   vertical-align: middle; }
 
-.logo-quilt-row {
-  height: 100px; }
-
 /*Interac Specific*/
 .color-band {
   margin: 0 0 0 -10%;
@@ -1844,6 +1841,20 @@ body {
 .design-preview-3 {
   margin-top: 75px; }
 
-.logo-quilt-row img {
-  display: block;
-  margin: 0 auto; }
+.logo-quilt-row {
+  padding: 50px; }
+  .logo-quilt-row img {
+    display: block;
+    margin: 0 auto; }
+
+/*Home*/
+.header-dots {
+  margin-left: 5%;
+  margin-top: -10%; }
+
+.header-sup {
+  margin-top: 10%;
+  margin-left: 25%; }
+
+.header__type {
+  max-width: 800px; }
