@@ -250,13 +250,14 @@ body {
 /*Portfolio Page*/
 .work-item {
   border-bottom: 1px solid $grey;
+  cursor: pointer;
   padding-bottom: 40px;
   margin-bottom: 40px;
   &:hover {
-    .design-img {
+    /*.design-img {
       right: 300%;
       opacity: 1;
-    }
+    }*/
     h2, p {
       color: $brown;
     }
@@ -300,7 +301,7 @@ body {
 }
 
 .design-preview-1 {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .design-preview-3 {
