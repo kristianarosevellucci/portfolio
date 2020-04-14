@@ -81,6 +81,13 @@ body {
   }
 }
 
+.preview4--creatubbles {
+  margin-top: -200px;
+  @media only screen and (max-width: $screen-sm-max) {
+    margin-top: 0;
+  }
+}
+
 .preview1, .preview2, .preview4 {
   @media only screen and (max-width: $screen-md-max) {
     display: block;
@@ -283,10 +290,10 @@ body {
   padding-bottom: 40px;
   margin-bottom: 40px;
   &:hover {
-    /*.design-img {
-      right: 300%;
+    .design-img {
+      right: 250%;
       opacity: 1;
-    }*/
+    }
     h2, p {
       color: $brown;
     }
@@ -361,6 +368,18 @@ body {
   text-align: center;
   @media only screen and (max-width: $screen-sm-max) {
     text-align: left;
+  }
+}
+
+.work-item__coming-soon {
+  cursor: default;
+  h2, p {
+    color: $mid-grey;
+  }
+  &:hover {
+    h2, p {
+      color: $mid-grey;
+    }
   }
 }
 
