@@ -116,7 +116,10 @@
 
 .container {
   width: 95% !important;
-  max-width: 95% !important; }
+  max-width: 1300px !important; }
+
+.containr-fluid {
+  max-width: 1300px !important; }
 
 .btn-primary {
   background: #FFE6E4;
@@ -222,6 +225,9 @@ h3 {
 
 /*---------- Contact Form ----------*/
 .contact__blurb {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
   padding: 10px 0 50px; }
 
 .btn.disabled {
@@ -999,11 +1005,9 @@ body {
 .hero-text {
   padding-left: 50px; }
 
-.header__logo {
-  margin-left: 75px; }
-  @media only screen and (max-width: 991px) {
-    .header__logo {
-      margin-left: 20px; } }
+@media only screen and (max-width: 991px) {
+  .header__logo {
+    margin-left: 20px; } }
 
 .product-preview {
   padding: 100px 0; }
@@ -1233,7 +1237,7 @@ body {
 .pink-box {
   background: #FFE6E4;
   height: 550px;
-  width: 500px;
+  width: 45%;
   position: absolute;
   top: 0;
   right: 0;

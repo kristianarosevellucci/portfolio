@@ -41,7 +41,6 @@ body {
 }
 
 .header__logo {
-  margin-left: 75px;
   @media only screen and (max-width: $screen-sm-max) {
     margin-left: 20px;
   }
@@ -320,7 +319,7 @@ body {
 .pink-box {
   background: $pink;
   height: 550px;
-  width: 500px;
+  width: 45%;
   position: absolute;
   top: 0;
   right: 0;

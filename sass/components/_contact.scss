@@ -1,6 +1,9 @@
 /*---------- Contact Form ----------*/
 
 .contact__blurb {
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
   padding: 10px 0 50px;
 }
 
