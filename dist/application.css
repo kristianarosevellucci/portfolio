@@ -145,7 +145,7 @@ p {
 
 h1 {
   color: #333333;
-  font-size: 90px;
+  font-size: 76px;
   font-family: 'Vollkorn', serif;
   padding: 0; }
   @media only screen and (max-width: 991px) {
@@ -1243,6 +1243,11 @@ body {
   right: 0;
   z-index: 1;
   margin-bottom: 50px; }
+
+.scroll-text {
+  color: #043227;
+  font-family: 'Vollkorn', serif;
+  font-size: 24px; }
 
 .design-header {
   position: relative;
